@@ -374,22 +374,7 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
             if (score < 33) riskColor = '#22c55e'
             else if (score < 66) riskColor = '#eab308'
             else riskColor = '#ef4444'
-          }
-          
-          // Build chemicals HTML
-          let chemicalsSection = ''
-          if (clicked.chemicals && Array.isArray(clicked.chemicals) && clicked.chemicals.length > 0) {
-            const chemList = clicked.chemicals
-              .map((chem: any) => {
-                const chemName = String(chem.name || 'Unknown')
-                const amount = Number(chem.amount_kg || 0).toLocaleString()
-                return `<div style="font-size: 11px; margin-bottom: 6px; padding: 6px; background: rgba(255,255,255,0.03); border-left: 2px solid rgba(255,255,255,0.2); border-radius: 3px;"><strong>${chemName}</strong><br/><span style="opacity: 0.8; font-size: 10px;">${amount} kg</span></div>`
-              })
-              .join('')
-            chemicalsSection = `<div style="margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 12px;"><div style="font-weight: 600; margin-bottom: 8px; font-size: 12px;">🧪 Chemicals Released (${clicked.chemicals.length}):</div>${chemList}</div>`
-          } else {
-            chemicalsSection = '<div style="margin-top: 12px; font-size: 11px; opacity: 0.6;">No chemical data available</div>'
-          }          
+          }      
           
           // Create popup content as actual DOM elements instead of HTML string
           const popupContainer = document.createElement('div')
