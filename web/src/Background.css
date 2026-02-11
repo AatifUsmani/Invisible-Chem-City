@@ -1,0 +1,37 @@
+.animated-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.animated-bg .blobs {
+  position: absolute;
+  inset: -10% -10% auto -10%;
+  height: 60vh;
+  filter: blur(36px) saturate(120%);
+  transform: translateZ(0);
+}
+
+.blob {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.b1 { width: 420px; height: 420px; left: 4%; top: 6%; background: radial-gradient(circle at 20% 20%, #8b5cf633, #7c3aed22 40%, transparent 70%); animation: float1 14s ease-in-out infinite; }
+.b2 { width: 360px; height: 360px; left: 60%; top: 4%; background: radial-gradient(circle at 20% 30%, #06b6d466, #0891b233 45%, transparent 70%); animation: float2 18s ease-in-out infinite; }
+.b3 { width: 480px; height: 480px; left: 28%; top: 18%; background: radial-gradient(circle at 25% 20%, #f59e0b33, #f9731633 45%, transparent 75%); animation: float3 20s ease-in-out infinite; }
+.b4 { width: 260px; height: 260px; left: 78%; top: 30%; background: radial-gradient(circle at 30% 30%, #10b98144, #05966922 50%, transparent 80%); animation: float4 16s ease-in-out infinite; }
+
+@keyframes float1 { 0% { transform: translateY(0) translateX(0) scale(1); } 50% { transform: translateY(-28px) translateX(12px) scale(1.05); } 100% { transform: translateY(0) translateX(0) scale(1); } }
+@keyframes float2 { 0% { transform: translateY(0) translateX(0) scale(1); } 50% { transform: translateY(-36px) translateX(-18px) scale(1.06); } 100% { transform: translateY(0) translateX(0) scale(1); } }
+@keyframes float3 { 0% { transform: translateY(0) translateX(0) scale(1); } 50% { transform: translateY(-18px) translateX(8px) scale(1.03); } 100% { transform: translateY(0) translateX(0) scale(1); } }
+@keyframes float4 { 0% { transform: translateY(0) translateX(0) scale(1); } 50% { transform: translateY(-28px) translateX(-10px) scale(1.04); } 100% { transform: translateY(0) translateX(0) scale(1); } }
+
+/* Ensure the animated background doesn't interfere with content stacking */
+@media (prefers-reduced-motion: reduce) {
+  .blob { animation: none !important; }
+}

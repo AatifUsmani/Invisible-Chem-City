@@ -1,0 +1,23 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Node
+node_modules/
+web/node_modules/
+
+# Env (do not commit tokens)
+.env
+web/.env
+.env.local
+*.env.local
+
+# Build / IDE
+dist/
+build/
+.ipynb_checkpoints/
+.DS_Store
+QUICKSTART.md

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0a0a0b;
+  color: #e4e4e7;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Mapbox overrides for dark theme */
+.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl-attrib {
+  opacity: 0.6;
+}
+.mapboxgl-popup-content {
+  background: rgba(18, 18, 20, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+.mapboxgl-popup-close-button {
+  color: #a1a1aa;
+  font-size: 20px;
+}

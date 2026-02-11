@@ -1,0 +1,702 @@
+facility_id,facility_name,industry,latitude,longitude,total_release_kg,n_chemicals,exposure_score,log_release,log_exposure,log_chems,risk_score
+19,Excelsior Steel Processing Ltd,Cold-Rolled Steel Shape Mfg.,43.6016,-79.5339,0.0,0,0.0,0.0,0.0,0.0,0.0
+23,New Era Tool Die Ltd,Machine Shops,43.7613,-79.5614,0.0,0,0.0,0.0,0.0,0.0,0.0
+28,Drape Master,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7192,-79.2495,0.0,0,0.0,0.0,0.0,0.0,0.0
+42,Viasystems Toronto Inc A Member Company Of TTM Technologies Group,Semiconductor & Electronic Component Mfg.,43.8027,-79.1969,10609.0,7,3182.7,0.7135592128977211,0.6843183559333597,0.946394630357186,74.45
+48,Phoenix Geophysics Ltd,All Other Miscellaneous Mfg.,43.8089,-79.3384,0.0,0,0.0,0.0,0.0,0.0,0.0
+50,Stayana International Trading,Material Recovery Facilities,43.7705,-79.4799,0.0,0,0.0,0.0,0.0,0.0,0.0
+57,Material Sciences Corporation Continuous Colour Coat Ltd,"Coating, Engraving & Heat Treating Activities",43.7169,-79.5826,16819.0,7,5045.7,0.749028875803948,0.7234042503350003,0.946394630357186,77.65
+58,TecniGlas A Division Of ProScience Inc,"Paint, Glass & Wallpaper Whl.",43.7359,-79.3246,0.0,0,0.0,0.0,0.0,0.0,0.0
+90,Cosmetica Laboratories Inc,Toilet Preparation Mfg.,43.7281,-79.2867,1439.0,1,431.7,0.5598206626622272,0.5149945849017207,0.31546487678572865,51.05
+98,Ward Funeral Home,Funeral Homes,43.7015,-79.5212,0.0,0,0.0,0.0,0.0,0.0,0.0
+114,Polytarp Products,Plastic Film and Sheet Manufacturing,43.7766,-79.4914,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+120,Black Creek Dry Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7054,-79.492,53.0,1,15.899999999999999,0.30706729358751306,0.2398748756776562,0.31546487678572865,28.44
+135,Ridley Funeral Home,Funeral Homes,43.5992,-79.5125,0.0,0,0.0,0.0,0.0,0.0,0.0
+145,Bernardo Funeral Home,Funeral Homes,43.735,-79.5606,0.0,0,0.0,0.0,0.0,0.0,0.0
+163,AEP Canada Inc,Plastic Film and Sheet Manufacturing,43.7657,-79.1622,1515.0,2,454.5,0.5637798508104442,0.5193513111273838,0.5,54.21
+170,Cascades Containerboard Packaging  Lithotech,Other Printing,43.8169,-79.2246,7380.0,1,2214.0,0.6856245357902426,0.6535383962526392,0.31546487678572865,62.38
+172,Mondelez Canada Inc East York Bakery,Cookie & Cracker Mfg.,43.7132,-79.3092,10304.0,3,3091.2,0.7113139147590913,0.6818442594812404,0.6309297535714573,69.47
+177,The Incredible Printing Company,Other Printing,43.7561,-79.4853,376.0,2,112.8,0.45665724739515035,0.40167946084420664,0.5,44.58
+178,Nestle Foods Group Sterling Road Nestle Canada Inc,Confectionery Mfg. from Purchased Chocolate,43.6526,-79.4441,5355.0,3,1606.5,0.6609380662145111,0.626340414978408,0.6309297535714573,64.93
+180,Battenfeld Grease Canada Ltd,Other Petroleum & Coal Products Mfg.,43.6296,-79.524,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+187,Mylan Pharmaceuticals ULC,Pharmaceutical & Medicine Mfg.,43.6353,-79.5219,0.0,0,0.0,0.0,0.0,0.0,0.0
+192,Blanco Canada Incorporated,Plastic Plumbing Fixture Mfg.,43.6277,-79.5227,20001.0,4,6000.299999999999,0.7623665047365379,0.7381024056748198,0.7324867603589634,75.6
+195,Vintage Hardwood Flooring,Hardwood Veneer & Plywood Mills,43.6152,-79.5287,5402.0,5,1620.6000000000001,0.6616106245669584,0.6270813517538308,0.8154648767857287,67.79
+202,University Of Toronto Central Steam Plant,Universities,43.6602,-79.3979,55804.0,3,16741.199999999997,0.8413491782259851,0.8251465714776202,0.6309297535714573,81.17
+211,Michael GORDON,Cold-Rolled Steel Shape Mfg.,43.7648,-79.5616,2.0,2,0.6,0.08456988001089125,0.039876036835434635,0.5,13.04
+216,Club Coffee LP,Coffee & Tea Mfg.,43.7381,-79.6096,5475.0,3,1642.5,0.6626437228963213,0.6282194897267438,0.6309297535714573,65.09
+218,Digital Specialty Chemicals Limited,All Other Misc. Chemical Product Mfg.,43.7648,-79.1696,0.0,0,0.0,0.0,0.0,0.0,0.0
+222,ABC Climate Control Systems Inc,All Other Plastic Product Mfg.,43.7084,-79.5744,1270.0,2,381.0,0.5502106941367328,0.5044212351538967,0.5,52.99
+223,Salflex Polymers,Custom Compounding of Purchased Resins,43.716,-79.5307,2999.0,2,899.7,0.6163207452741531,0.5771945787464273,0.5,58.93
+225,Henry Company Canada Inc Scarborough,All Other Misc. Chemical Product Mfg.,43.7621,-79.1664,3213.0,6,963.8999999999999,0.6216248923937273,0.5830361380414569,0.8856218745807111,65.26
+228,"Everform Moulded Products, a Division of VPC Group Inc.",Office Furniture (except Wood) Mfg.,43.7214,-79.3111,11547.0,1,3464.1,0.7200804976183603,0.6915042549745662,0.31546487678572865,65.48
+229,Beechgrove Country Foods,All Other Misc. Animal Production,43.7657,-79.1579,0.0,0,0.0,0.0,0.0,0.0,0.0
+232,Lifelabs,Medical & Diagnostic Laboratories,43.6782,-79.5858,27.0,2,8.1,0.2565091784463013,0.1873543657475537,0.5,26.82
+233,Jacobs & Thompson Inc.,Urethane & Miscellaneous Foam Product Mfg.,43.7616,-79.5451,20000.0,1,6000.0,0.7623626560840773,0.7380981643889105,0.31546487678572865,69.28
+235,BASF Canada,Resin & Synthetic Rubber Mfg.,43.6912,-79.5962,6848.0,1,2054.4,0.6798660214864624,0.6471937497401067,0.31546487678572865,61.86
+238,Eco II Manufacturing Inc,Plastics Bag Manufacturing,43.8208,-79.2602,0.0,0,0.0,0.0,0.0,0.0,0.0
+240,Colour Innovations Print Inc,Other Printing,43.7655,-79.5302,5752.0,1,1725.6,0.6664423622288433,0.6324044086787404,0.31546487678572865,60.65
+246,The Printing House Limited Branch 057,Other Printing,43.6466,-79.3962,0.0,0,0.0,0.0,0.0,0.0,0.0
+247,The Printing House Limited Branch 055,Other Printing,43.6429,-79.408,0.0,0,0.0,0.0,0.0,0.0,0.0
+252,The Printing House Limited Branch 052,Other Printing,43.7667,-79.4768,0.0,0,0.0,0.0,0.0,0.0,0.0
+253,Atlantic Packaging 120 Tiffield Road,Other Printing,43.8165,-79.2565,279.0,1,83.7,0.4337594668673886,0.3766233412549196,0.31546487678572865,39.73
+255,Atlantic Packaging 80 Progress Avenue,Other Printing,43.7721,-79.2756,1981.0,2,594.3,0.5844125729431756,0.5420609428903671,0.5,56.06
+257,Atlantic Packaging 350 Midwest Road,Corrugated & Solid Fibre Box Mfg.,43.7613,-79.2714,3042.0,3,912.6,0.6174162757132217,0.578401082565983,0.6309297535714573,61.02
+273,Dufferin Kwik Kopy,Office Supplies & Stationery Stores,43.7821,-79.4701,0.0,0,0.0,0.0,0.0,0.0,0.0
+275,Toronto Research Chemicals,Pharmaceutical & Medicine Mfg.,43.7739,-79.4707,2747.0,6,824.1,0.6095667069916308,0.5697566822481602,0.8856218745807111,64.17
+277,Polafemet,Other Ornamental & Architec. Metal Prod. Mfg.,43.7567,-79.5613,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+281,Pedsco Canada Ltd,All Other General-Purpose Machinery Mfg.,43.7311,-79.2409,0.0,0,0.0,0.0,0.0,0.0,0.0
+285,RPM Canada Company Tremco Canada Division,Paint & Coating Mfg.,43.7133,-79.3473,17410.0,3,5223.0,0.7516872267184934,0.7263337443154291,0.6309297535714573,73.1
+293,Top Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7793,-79.1382,0.0,0,0.0,0.0,0.0,0.0,0.0
+294,NutriAg Ltd,Support Activities for Crop Production,43.7379,-79.5307,0.0,2,0.0,0.0,0.0,0.5,7.58
+295,Global Contract Inc,Institutional Furniture Mfg.,43.7737,-79.4883,3467.0,2,1040.1,0.6274800395239997,0.5894848626809888,0.5,59.94
+299,Warren's Waterless Printing Inc,Other Printing,43.7281,-79.5279,1648.0,1,494.4,0.5702532891272707,0.5264754749501258,0.31546487678572865,51.99
+302,Mondelez Canada Inc,Non-Chocolate Confectionery Mfg.,43.7344,-79.2836,4499.0,3,1349.6999999999998,0.6475329717302052,0.6115730580719395,0.6309297535714573,63.73
+303,Apotex Inc 150 Signet Manufacturing Site,Pharmaceutical & Medicine Mfg.,43.7644,-79.5407,86703.0,4,26010.899999999994,0.8752688606773252,0.8625297829059658,0.7324867603589634,85.77
+305,StampTek,Stamping,43.7735,-79.4882,193.0,2,57.9,0.40551351648039513,0.34580241375426113,0.5,40.0
+311,Lampshades Unlimited,Blind & Shade Mfg.,43.8205,-79.2462,524.0,1,157.2,0.48214902108000984,0.4296278954697008,0.31546487678572865,44.07
+315,Apotex Etobicoke,Pharmaceutical & Medicine Mfg.,43.7504,-79.6244,75507.0,4,22652.1,0.8646256603433147,0.8507997503307216,0.7324867603589634,84.81
+317,CBM Leaside RM Plant,Ready-Mix Concrete Mfg.,43.7092,-79.3545,310.0,2,93.0,0.4418424979196688,0.38546210884111054,0.5,43.25
+318,CBM Portlands RM Plant,Ready-Mix Concrete Mfg.,43.656,-79.3276,661.0,2,198.29999999999998,0.49999789222311536,0.44922224935173394,0.5,48.47
+319,CBM Scarborough RM Plant,Ready-Mix Concrete Mfg.,43.824,-79.2607,319.0,2,95.7,0.444038556195284,0.387864716547794,0.5,43.45
+321,Apotex Special Products Facility,Pharmaceutical & Medicine Mfg.,43.769,-79.5394,2469.0,2,740.6999999999999,0.60135651349062,0.5607159430975895,0.5,57.59
+348,Profile Industries Limited,Office Furniture (except Wood) Mfg.,43.7694,-79.5375,2227.0,7,668.1,0.5934189324167632,0.5519762588633161,0.946394630357186,63.64
+360,Molson Coors Canada,Breweries,43.674,-79.5897,44612.0,3,13383.6,0.8241183791767791,0.8061565882304479,0.6309297535714573,79.62
+361,Walton Street Steam Plant,Steam & Air-Conditioning Supply,43.6579,-79.3855,129468.0,3,38840.4,0.906132861369585,0.8965456939216764,0.6309297535714573,87.01
+362,Pearl Street Steam Plant,Steam & Air-Conditioning Supply,43.6481,-79.386,48260.0,4,14478.4,0.8301687979540101,0.8128270474478021,0.7324867603589634,81.71
+363,Lincoln Electric Company Of Canada,All Other Misc. Fabricated Metal Product Mfg.,43.712,-79.3547,10477.0,6,3143.1,0.7125955048894049,0.6832564430638516,0.8856218745807111,73.45
+371,Coca-Cola Canada Bottling Limited,Soft Drink & Ice Mfg.,43.759,-79.5366,7232.0,3,2169.6,0.684065311047292,0.6518204500368212,0.6309297535714573,67.02
+379,Prinetics Graphics Solutions Inc,Other Printing,43.8055,-79.201,0.0,0,0.0,0.0,0.0,0.0,0.0
+381,Nitta Gelatin Canada Inc,All Other Food Mfg.,43.6605,-79.4446,6716.0,3,2014.8,0.6783679343240187,0.645543205315928,0.6309297535714573,66.5
+382,Steam Whistle Brewing,Breweries,43.6418,-79.3864,0.0,0,0.0,0.0,0.0,0.0,0.0
+389,Lactalis - Rakely Etobicoke,Fluid Milk Mfg.,43.6479,-79.6052,4996.0,3,1498.8,0.6555972989744708,0.6204567587060048,0.6309297535714573,64.45
+390,Eglinton Dry Cleaners Ltd,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7395,-79.2356,0.0,0,0.0,0.0,0.0,0.0,0.0
+393,MagtronHeroux Devtek,Aerospace Product & Parts Mfg.,43.7551,-79.288,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+396,Precisioneering DKG Corp,"Laminated Plastic Plate, Sheet & Shape Mfg.",43.7616,-79.2764,0.0,0,0.0,0.0,0.0,0.0,0.0
+398,KIK Operating Partnership,Soap & Cleaning Compound Mfg.,43.7086,-79.5674,2665.0,3,799.5,0.6072346988053553,0.5671886803275374,0.6309297535714573,60.1
+402,Utilicor Technologies Inc,Construction Machinery Mfg.,43.7051,-79.4706,0.0,0,0.0,0.0,0.0,0.0,0.0
+407,SAE Power Company,All Other Electrical Equip. & Component Mfg.,43.7663,-79.2917,0.0,0,0.0,0.0,0.0,0.0,0.0
+408,Maple Leaf Foods Cappola Cartwright,Rendering & Meat Processing from Carcasses,43.7226,-79.4638,781.0,3,234.29999999999998,0.5128217314416956,0.46331026535118364,0.6309297535714573,51.61
+409,Maple Leaf Foods Cappola Lepage,Rendering & Meat Processing from Carcasses,43.7707,-79.4995,800.0,2,240.0,0.5146697009447787,0.4653410121656773,0.5,49.79
+411,LANXESS Canada CoCie West Hill,Other Petroleum & Coal Products Mfg.,43.7628,-79.1635,58920.0,3,17676.0,0.845531752671338,0.829756195677439,0.6309297535714573,81.55
+412,Astley Gilbert Limited,Other Printing,43.7391,-79.3166,512.0,1,153.6,0.4803690846210667,0.4276749248711208,0.31546487678572865,43.91
+415,Primo Foods Inc,Dry Pasta Mfg.,43.7233,-79.5281,6601.0,3,1980.3,0.6770385875939551,0.6440785830261879,0.6309297535714573,66.38
+417,Mondelez Canada Inc Scarborough Bakery,Cookie & Cracker Mfg.,43.775,-79.2647,1807.0,3,542.1,0.5773393604779106,0.5342748237465597,0.6309297535714573,57.41
+418,DART Canada Inc,Polystyrene Foam Product Mfg.,43.8063,-79.2437,912.0,3,273.6,0.5247442991801551,0.4764144647438377,0.6309297535714573,52.68
+419,Apotex 4100 Weston,Pharmaceutical & Medicine Mfg.,43.766,-79.5456,603.0,1,180.9,0.49293959948029337,0.44147158341510634,0.31546487678572865,45.04
+420,Apotex 3701 Weston,Pharmaceutical & Medicine Mfg.,43.7651,-79.5453,13354.0,2,4006.2,0.731271569843045,0.7038361423698984,0.5,69.28
+429,Wakefield Canada Inc,Other Petroleum & Coal Products Mfg.,43.5937,-79.5369,1010.0,2,303.0,0.5325930089621004,0.48504392950396175,0.5,51.4
+433,Flash Reproductions Ltd,Other Printing,43.6828,-79.5896,0.0,0,0.0,0.0,0.0,0.0,0.0
+434,Four L Graphics Ltd,Other Printing,43.7515,-79.2899,995.0,1,298.5,0.531442332496819,0.483778657026975,0.31546487678572865,48.5
+437,MacGregors Meat  Seafood Ltd,Rendering & Meat Processing from Carcasses,43.7691,-79.5387,0.0,0,0.0,0.0,0.0,0.0,0.0
+438,Ipex Inc,Plastic Pipe & Pipe Fitting Mfg.,43.7141,-79.3114,926.0,2,277.79999999999995,0.5259157386454753,0.4777022968467402,0.5,50.8
+441,Ipex Inc,Plastic Pipe & Pipe Fitting Mfg.,43.7219,-79.296,1799.0,3,539.7,0.5769979904187965,0.5338990697766949,0.6309297535714573,57.38
+446,D Crupi And Sons Limited Passmore Ave Asphalt Plant,Asphalt Paving Mixture & Block Mfg.,43.8201,-79.2973,11006.0,4,3301.8,0.7163869900103599,0.687434309118219,0.7324867603589634,71.47
+447,D Crupi And Sons Limited Bethridge Asphalt Plant,Asphalt Paving Mixture & Block Mfg.,43.7092,-79.5856,10509.0,4,3152.7000000000003,0.7128302413310341,0.6835150996120423,0.7324867603589634,71.15
+448,D Crupi And Sons Limited Brimley Asphalt Plant,Asphalt Paving Mixture & Block Mfg.,43.7325,-79.2462,1630.0,3,489.0,0.5694083911338533,0.5255455962025339,0.6309297535714573,56.7
+454,Superior Ideas Ltd,Wood Office Furniture Mfg.,43.7158,-79.5747,11.0,1,3.3,0.1912851871205699,0.12375178137927537,0.31546487678572865,18.48
+458,Global Wood Concepts Ltd,Wood Office Furniture Mfg.,43.7809,-79.4791,128.0,2,38.4,0.37410263488912104,0.3116895528036471,0.5,37.19
+459,Halltech Inc,Adhesive Mfg.,43.7645,-79.1692,463.0,1,138.9,0.472641081133368,0.4191980868891213,0.31546487678572865,43.22
+463,CCL Label,Other Printing,43.6934,-79.5873,1053.0,1,315.9,0.5357993701288404,0.48856984032090023,0.31546487678572865,48.89
+464,Dimpflmeier Bakery Ltd,Commercial Bakeries & Frozen Product Mfg.,43.6339,-79.5287,17117.0,3,5135.1,0.7503807691738414,0.7248940306669733,0.6309297535714573,72.99
+465,Toronto Transit Commission  Hillcrest Complex,Urban Transit Systems,43.6753,-79.4152,11367.0,4,3410.1,0.7188711702517738,0.6901716698507789,0.7324867603589634,71.69
+466,The International Group Inc,Other Petroleum & Coal Products Mfg.,43.7846,-79.2748,86221.0,3,25866.3,0.8748397304322715,0.8620568310654774,0.6309297535714573,84.19
+467,Toronto Transit Commission Arrow Road Garage,Urban Transit Systems,43.7475,-79.5303,0.0,0,0.0,0.0,0.0,0.0,0.0
+468,Toronto Transit Commission Birchmount Garage,Urban Transit Systems,43.7057,-79.269,113.0,1,33.9,0.36458697815412355,0.3014000038387898,0.31546487678572865,33.54
+469,Toronto Transit Commission Greenwood Complex,Urban Transit Systems,43.6757,-79.33,1315.0,1,394.5,0.5528890060336895,0.5073678121482542,0.31546487678572865,50.43
+470,Toronto Transit Commission Lakeshore Garage,Urban Transit Systems,43.6542,-79.3318,144.0,1,43.199999999999996,0.38310310178025864,0.32144289926287806,0.31546487678572865,35.2
+473,Toronto Transit Commission Malvern Garage,Urban Transit Systems,43.7931,-79.2424,0.0,0,0.0,0.0,0.0,0.0,0.0
+475,Toronto Transit Commission Mount Dennis Garage,Urban Transit Systems,43.693,-79.4923,152.0,1,45.6,0.38723718622349734,0.32592898257195585,0.31546487678572865,35.56
+476,Toronto Transit Commission Eglinton Garage,Urban Transit Systems,43.7202,-79.291,0.0,0,0.0,0.0,0.0,0.0,0.0
+477,DJ Manufacturing Co Ltd,Other Millwork,43.6231,-79.5498,7104.0,2,2131.2,0.6826908444535039,0.6503060787473789,0.5,64.91
+478,Toronto Transit Commission Queensway Garage,Urban Transit Systems,43.6154,-79.5282,0.0,0,0.0,0.0,0.0,0.0,0.0
+480,Toronto Transit Commission Roncesvalles Carhouse,Urban Transit Systems,43.6388,-79.4482,0.0,0,0.0,0.0,0.0,0.0,0.0
+481,Dominion Colour Corporation,Other Basic Organic Chemical Mfg.,43.6064,-79.5083,3516.0,3,1054.8,0.6285600750750684,0.5906744258313411,0.6309297535714573,62.02
+482,Toronto Transit Commission Russell Carhouse,Urban Transit Systems,43.6648,-79.3231,0.0,0,0.0,0.0,0.0,0.0,0.0
+483,Toronto Transit Commission Wilson Complex,Urban Transit Systems,43.7388,-79.4526,215.0,1,64.5,0.41378260069719175,0.3548133996395274,0.31546487678572865,37.94
+487,Protectolite Inc,Glass Product Mfg. from Purchased Glass,43.7364,-79.324,490.0,2,147.0,0.4769949706434462,0.42397336595653945,0.5,46.41
+488,Select Food Products Ltd,Seasoning & Dressing Mfg.,43.7177,-79.3101,6744.0,2,2023.1999999999998,0.6786881557070429,0.6458960140431647,0.5,64.55
+492,Wayview Company Limited,Plastics Bag Manufacturing,43.8227,-79.2629,0.0,0,0.0,0.0,0.0,0.0,0.0
+493,MillerKnoll North America Corp.,Wood Office Furniture Mfg.,43.7495,-79.5329,31641.0,4,9492.300000000001,0.7976730788901213,0.7770117992664344,0.7324867603589634,78.78
+494,Estee Lauder Cosmetics Ltd,Toilet Preparation Mfg.,43.7957,-79.269,4301.0,2,1290.3,0.6440691274997878,0.6077574162813413,0.5,61.43
+495,DOW CANADA MATERIAL SCIENCES ULC,Paint & Coating Mfg.,43.7599,-79.1717,5255.0,4,1576.5,0.6594872350642568,0.6247420887183552,0.7324867603589634,66.34
+501,Vadim Bytensky,Urethane & Miscellaneous Foam Product Mfg.,43.7823,-79.4856,10000.0,1,3000.0,0.7090088511816987,0.6793043244271557,0.31546487678572865,64.48
+502,City of Toronto Dufferin Organics Processing Facility,Waste Treatment & Disposal,43.7606,-79.4754,2432.0,3,729.6,0.6001946654427764,0.5594366334705839,0.6309297535714573,59.47
+504,Spec Furniture Inc,Institutional Furniture Mfg.,43.7045,-79.5889,1449.0,3,434.7,0.560353390201346,0.5155807823725792,0.6309297535714573,55.88
+507,TI Group,Other Printing,43.7093,-79.3444,10243.0,1,3072.9,0.7108568879504046,0.6813406631311237,0.31546487678572865,64.65
+508,Portlands Energy Centre,Fossil-Fuel Electric Power Generation,43.6475,-79.3299,423461.0,7,127038.29999999999,0.9973544831522971,0.997084267387346,0.946394630357186,100.0
+510,OUTFRONT Media Canada LP,Other Printing,43.6047,-79.5318,725.0,1,217.5,0.5071018411735425,0.45702557208961486,0.31546487678572865,46.31
+511,Dextran Products Limited,Pharmaceutical & Medicine Mfg.,43.7232,-79.2773,8503.0,3,2550.8999999999996,0.6965268547172874,0.6655508133456007,0.6309297535714573,68.14
+517,Winpak Portion Packaging Ltd,All Other Plastic Product Mfg.,43.713,-79.5848,240.0,1,72.0,0.4222132078203409,0.3640110587884867,0.31546487678572865,38.69
+518,Gazzola Paving Limited,Asphalt Paving Mixture & Block Mfg.,43.7042,-79.5991,14345.0,5,4303.5,0.7367817378858466,0.7099081336452607,0.8154648767857287,74.56
+519,Four Star Metal Finishing Ltd,"Coating, Engraving & Heat Treating Activities",43.7668,-79.5543,1602.0,4,480.59999999999997,0.5680753912076835,0.5240785514122477,0.7324867603589634,58.12
+520,Torcan Coatings Inc,Paint & Coating Mfg.,43.7181,-79.5269,35882.0,1,10764.6,0.8073553437952443,0.7876823389078385,0.31546487678572865,73.33
+526,Hamilton Kent Inc,Other Rubber Product Mfg.,43.6752,-79.5903,224.0,1,67.2,0.4169250297542785,0.35824054225650176,0.31546487678572865,38.22
+527,Sanofi Pasteur,Pharmaceutical & Medicine Mfg.,43.7884,-79.4645,140112.0,4,42033.6,0.9122147864207015,0.9032487530972181,0.7324867603589634,89.09
+532,Silgan Plastics Canada,Plastic Bottle Mfg.,43.7685,-79.2686,209.0,1,62.699999999999996,0.41161403976860117,0.35244922875254997,0.31546487678572865,37.75
+534,Atlas Roofing Corporation,Urethane & Miscellaneous Foam Product Mfg.,43.5983,-79.5357,60134.0,3,18040.2,0.8471016950391212,0.8314864350924844,0.6309297535714573,81.69
+544,MSB Plastics Manufacturing Ltd Plt 1,Motor Vehicle Plastic Parts Mfg.,43.7019,-79.592,950.0,2,285.0,0.5278833555972196,0.4798655239133251,0.5,50.98
+545,Helmitin Toronto Plant,Paint & Coating Mfg.,43.6255,-79.5419,3250.0,4,974.9999999999999,0.6225060207829416,0.5840065705272107,0.7324867603589634,63.02
+546,Give And Go Prepared Foods Finch Bakery,Commercial Bakeries & Frozen Product Mfg.,43.7339,-79.6074,1556.0,2,466.79999999999995,0.5658340773010521,0.5216119372509505,0.5,54.39
+547,MSB Plastics Manufacturing Ltd Plant 2,Motor Vehicle Plastic Parts Mfg.,43.7023,-79.5906,3160.0,3,948.0,0.6203449013107522,0.5816264317235855,0.6309297535714573,61.28
+548,Give And Go Prepared Foods Humber Bakery,Commercial Bakeries & Frozen Product Mfg.,43.7357,-79.6097,13924.0,2,4177.2,0.7344888950395806,0.7073815009557581,0.5,69.57
+551,ORBIS Canada Ltd,All Other Plastic Product Mfg.,43.7411,-79.6038,436.0,2,130.8,0.4680260962735344,0.4141379197055282,0.5,45.6
+553,Autostyle Autobody Inc,"Automotive Body, Paint & Interior R&M",43.765,-79.3019,445.0,2,133.5,0.46959536783076783,0.41585839425518784,0.5,45.74
+558,Toronto Hydro 500 Comm,Electric Power Distribution,43.6535,-79.3336,1.0,1,0.3,0.05335765355483933,0.022259502742557415,0.31546487678572865,8.11
+565,Van Rob Inc North York,Other Motor Vehicle Parts Mfg.,43.7245,-79.5261,1268.0,5,380.4,0.550089467620062,0.5042878707411613,0.8154648767857287,57.76
+568,Shawn Pinarreta,Wood Kitchen Cabinet & Counter Top Mfg.,43.6268,-79.5266,858.0,2,257.4,0.5200511345145862,0.471255502317753,0.5,50.28
+569,City Of Toronto Ashbridges Bay Wastewater Treatment Plant,Sewage Treatment Facilities,43.6563,-79.3261,34470.0,8,10261.35,0.8042650093575462,0.7836206135261754,1.0,83.4
+570,City Of Toronto Highland Creek Treatment Plant,Sewage Treatment Facilities,43.7654,-79.1522,82115.0,7,24629.04,0.8710837425008933,0.857898489380694,0.946394630357186,88.63
+571,City Of Toronto Humber Wastewater Treatment Plant,Sewage Treatment Facilities,43.6311,-79.481,17080.0,7,5094.9,0.7502142018746897,0.7242273643257894,0.946394630357186,77.73
+572,City Of Toronto North Toronto Treatment Plant,Sewage Treatment Facilities,43.7004,-79.36,254.0,3,75.30000000000001,0.4265599410788541,0.3677622192709876,0.6309297535714573,43.83
+574,Brazilian Canadian Coffee Co Ltd,Coffee & Tea Mfg.,43.7082,-79.5785,193.0,3,57.900000000000006,0.40551351648039513,0.3458024137542612,0.6309297535714573,41.98
+579,Fermar Asphalt Limited,Asphalt Paving Mixture & Block Mfg.,43.7466,-79.6202,8925.0,4,2677.5,0.7002550718766782,0.66965875634998,0.7324867603589634,70.01
+581,Agropur Cooperative,Fluid Milk Mfg.,43.7407,-79.325,3014.0,3,904.2,0.6167046803452322,0.5776174035807502,0.6309297535714573,60.95
+590,Gay Lea Foods CoOp Ltd Longlife Of Canada Division,Dairy Product (except Frozen & Fluid) Mfg.,43.7661,-79.5395,3716.0,3,1114.8,0.632817661173038,0.5953638847731769,0.6309297535714573,62.4
+591,Gay Lea Foods CoOp Ltd Clayson Division,Dairy Product (except Frozen & Fluid) Mfg.,43.723,-79.5254,2943.0,3,882.9,0.6148702265690168,0.5755971481608808,0.6309297535714573,60.79
+592,"Vitafoam Products Canada - Toronto, a Division of VPC Group Inc.",Urethane & Miscellaneous Foam Product Mfg.,43.7613,-79.4834,1175.0,2,352.5,0.5442305833486545,0.49784283236882043,0.5,52.45
+593,Alfred Georgi,Plastics Bag Manufacturing,43.8165,-79.2575,10113.0,3,3033.9,0.7098737478670409,0.6802573465922687,0.6309297535714573,69.34
+597,John E. Goudey Mfg. Ltd.,Paint & Coating Mfg.,43.6683,-79.4446,1584.0,2,475.2,0.5672061104525763,0.5231218766846129,0.5,54.52
+598,Protech Chemicals Ltd,Paint & Coating Mfg.,43.7681,-79.5518,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+599,Teknion Limited,Office Furniture (except Wood) Mfg.,43.7791,-79.4817,2144.0,3,643.1999999999999,0.5904964491621849,0.5487586872389675,0.6309297535714573,58.6
+600,Teknion Limited,Office Furniture (except Wood) Mfg.,43.775,-79.4886,1526.0,1,457.8,0.5643363876045676,0.5199637572348149,0.31546487678572865,51.46
+601,Teknion Limited,Office Furniture (except Wood) Mfg.,43.7824,-79.4791,673.0,2,201.9,0.5013807825060485,0.4507410920778275,0.5,48.6
+602,Tempo Aerospace Inc,Paint & Coating Mfg.,43.7616,-79.554,688.0,1,206.4,0.5030751756854007,0.452602189827014,0.31546487678572865,45.95
+603,Allied Halo Industries Inc,Other Printing,43.7623,-79.2767,200214.0,2,60064.2,0.9396918034466418,0.9335320403216706,0.5,88.04
+604,Nienkamper Furniture  Accessories Inc,Wood Office Furniture Mfg.,43.821,-79.2352,16353.0,2,4905.9,0.7468660681310152,0.7210208537109408,0.5,70.68
+608,Tekwood a Division of Teknion Canada Ltd,Wood Office Furniture Mfg.,43.7789,-79.4853,3367.0,2,1010.0999999999999,0.6252277190496858,0.58700416818441,0.5,59.74
+609,Cardinal Funeral Homes,Funeral Homes,43.6532,-79.4064,0.0,0,0.0,0.0,0.0,0.0,0.0
+610,GH Hogle Funeral Home Limited Mimico Chapel,Funeral Homes,43.6131,-79.4925,0.0,0,0.0,0.0,0.0,0.0,0.0
+616,Hymopack Ltd,Plastics Bag Manufacturing,43.6238,-79.5465,4564.0,2,1369.2,0.6486369340464031,0.6127891607336949,0.5,61.84
+621,Griffith Foods Limited,All Other Food Mfg.,43.7188,-79.2947,53087.0,3,15926.1,0.8375069683686103,0.8209120730315198,0.6309297535714573,80.83
+10013,Array Marketing Group Inc,All Other Plastic Product Mfg.,43.7696,-79.2778,1453.0,2,435.9,0.56056545320647,0.5158141319849995,0.5,53.92
+11077,Deco Labels Deco Adhesive Products 1985 Limited,Packaging & Labelling Services,43.7037,-79.5603,0.0,0,0.0,0.0,0.0,0.0,0.0
+14495,Steeprock Discount Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.761,-79.4663,0.0,0,0.0,0.0,0.0,0.0,0.0
+14729,Three Star Sales & Service,"Automotive Body, Paint & Interior R&M",43.7821,-79.4727,282.0,1,84.6,0.4345798528435901,0.3775200939227617,0.31546487678572865,39.8
+15141,White Knight Kitchen Inc,Other Millwork,43.6169,-79.5577,4000.0,1,4000.0,0.6384854146732977,0.7037047719348503,0.31546487678572865,62.26
+15149,Williams Brothers Corporation,All Other Misc. Fabricated Metal Product Mfg.,43.8177,-79.2395,246.0,1,73.8,0.4241062250695327,0.3660776773060056,0.31546487678572865,38.86
+15400,A J Lemik,Other Metalworking Machinery Mfg.,43.7535,-79.5578,0.0,4,0.0,0.0,0.0,0.7324867603589634,11.1
+18781,Latitude,Wood Kitchen Cabinet & Counter Top Mfg.,43.7567,-79.4832,0.0,0,0.0,0.0,0.0,0.0,0.0
+18812,Eventscape Inc,"Showcase, Partition, Shelving & Locker Mfg.",43.6141,-79.541,0.0,0,0.0,0.0,0.0,0.0,0.0
+19575,Nucap Industries Inc,Motor Vehicle Brake System Mfg.,43.8059,-79.3316,0.0,0,0.0,0.0,0.0,0.0,0.0
+20076,Prochilo Brothers Auto Collision,"Automotive Body, Paint & Interior R&M",43.7538,-79.2662,561.0,2,168.3,0.48739155501655407,0.4353812194120333,0.5,47.34
+21445,U K Auto Body Work,"Automotive Body, Paint & Interior R&M",43.7762,-79.4889,255.0,2,76.5,0.42686122843871466,0.36908617814937017,0.5,41.91
+21862,Beatty Machine And Tool Works Ltd,Stamping,43.7434,-79.2898,1.0,1,0.4,0.05335765355483933,0.028546969569448924,0.31546487678572865,8.36
+21889,Vencon Technologies Inc,Computer & Peripheral Equipment Mfg.,43.7884,-79.4261,0.0,0,0.0,0.0,0.0,0.0,0.0
+21907,Thomas Varga,Motor Vehicle Body Mfg.,43.7651,-79.5585,0.0,0,0.0,0.0,0.0,0.0,0.0
+21908,Ontario Trucking Disposal,Material Recovery Facilities,43.7085,-79.5683,0.0,0,0.0,0.0,0.0,0.0,0.0
+21937,Ashford Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7034,-79.4142,654.0,4,196.2,0.4991795826869215,0.4483235365321541,0.7324867603589634,51.92
+21950,Amvic Inc,Resin & Synthetic Rubber Mfg.,43.8038,-79.34,114821.0,3,34446.299999999996,0.8968909096786735,0.8863598998167376,0.6309297535714573,86.17
+21997,Sun Laundromat,Coin-Operated Laundries & Dry Cleaners,43.76,-79.2243,0.0,0,0.0,0.0,0.0,0.0,0.0
+22005,Spongezz Inc,All Other Plastic Product Mfg.,43.7568,-79.4824,0.0,0,0.0,0.0,0.0,0.0,0.0
+22010,Kinectrics Inc,Engineering Services,43.6314,-79.531,0.0,0,0.0,0.0,0.0,0.0,0.0
+22020,Broadview Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6811,-79.3577,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+22046,Dalton Pharma Services,Pharmaceutical & Medicine Mfg.,43.7777,-79.4908,0.0,0,0.0,0.0,0.0,0.0,0.0
+22087,Families Choice Cremation Services Inc,Funeral Homes,43.5992,-79.5125,0.0,0,0.0,0.0,0.0,0.0,0.0
+22093,The Simple Alternative Funeral Centre,Funeral Homes,43.7616,-79.3592,0.0,0,0.0,0.0,0.0,0.0,0.0
+22095,Prochilo Bros Auto Collision North York,"Automotive Body, Paint & Interior R&M",43.7574,-79.5535,401.0,2,120.29999999999998,0.46159981902293223,0.40709444011341556,0.5,45.02
+22105,Clearview Industries Ltd,Metal Window & Door Mfg.,43.7579,-79.5415,0.0,0,0.0,0.0,0.0,0.0,0.0
+22123,Truck Equipment Service Company Limited TESCO,Motor Vehicle Body Mfg.,43.7739,-79.2733,0.0,0,0.0,0.0,0.0,0.0,0.0
+22134,National Shoe Specialties Ltd,Footwear Whl.,43.8075,-79.2998,0.0,0,0.0,0.0,0.0,0.0,0.0
+22137,The Home Door Inc,Metal Window & Door Mfg.,43.7538,-79.2734,267.0,1,80.1,0.4303875925668803,0.37293843019012907,0.31546487678572865,39.43
+22138,Delmoro Funeral Home,Funeral Homes,43.718,-79.5126,0.0,0,0.0,0.0,0.0,0.0,0.0
+22139,Mecon Industries Limited,All Other Miscellaneous Mfg.,43.7208,-79.2832,139.0,2,41.699999999999996,0.38040181331254924,0.31851365631168965,0.5,37.75
+22162,Florentina Foods Ltd,All Other Food Mfg.,43.7759,-79.4788,0.0,0,0.0,0.0,0.0,0.0,0.0
+22188,Crystal Tile & Marble Ltd.,Holding Companies,43.7157,-79.4587,0.0,0,0.0,0.0,0.0,0.0,0.0
+22193,Scigiene Corporation,"Measuring, Medical & Controlling Devices Mfg.",43.8045,-79.2005,0.0,0,0.0,0.0,0.0,0.0,0.0
+22197,Identifab Industries,Commercial Screen Printing,43.7468,-79.6061,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+22221,Assured Automotive,"Automotive Body, Paint & Interior R&M",43.7569,-79.2694,209.0,1,62.699999999999996,0.41161403976860117,0.35244922875254997,0.31546487678572865,37.75
+22228,Dakota Systems Ltd,Support Activities for Printing,43.8072,-79.2357,1389.0,1,416.7,0.5571002798567846,0.5120012602221361,0.31546487678572865,50.81
+22230,RPS Industries Inc,Motor Vehicle Plastic Parts Mfg.,43.798,-79.2661,0.0,0,0.0,0.0,0.0,0.0,0.0
+22232,Gemtex Abrasives,Abrasive Product Mfg.,43.6998,-79.5848,1420.0,2,426.0,0.5587982095872559,0.513869526504231,0.5,53.76
+22240,Ken Shaw Lexus Toyota Scion,"Automotive Body, Paint & Interior R&M",43.67,-79.4792,544.0,1,163.2,0.48502706926298944,0.43278615006319937,0.31546487678572865,44.33
+22248,Longford International Ltd,All Other Industrial Machinery Mfg.,43.7828,-79.2815,0.0,0,0.0,0.0,0.0,0.0,0.0
+22261,Patty King Bakery,Commercial Bakeries & Frozen Product Mfg.,43.774,-79.2682,0.0,0,0.0,0.0,0.0,0.0,0.0
+22277,Alton Windows And Doors Limited,Metal Window & Door Mfg.,43.7605,-79.5513,0.0,0,0.0,0.0,0.0,0.0,0.0
+22281,Vision Coaters Canada Ltd,"Coating, Engraving & Heat Treating Activities",43.7534,-79.5581,2343.0,3,702.9,0.5973259578689253,0.556277982490084,0.6309297535714573,59.21
+22285,Mister John Auto Collision,"Automotive Body, Paint & Interior R&M",43.7657,-79.5551,0.0,0,0.0,0.0,0.0,0.0,0.0
+22303,MOH Holdings Inc Faster Linen Service Ltd,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6137,-79.5254,3148.0,4,944.4,0.6200521130445898,0.5813039744993221,0.7324867603589634,62.79
+22306,Gibson's Cleaners Company Limited,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6595,-79.5136,207.0,1,62.099999999999994,0.41087739470049706,0.3516463018472606,0.31546487678572865,37.68
+22316,Sun Lake Plastic Inc,All Other Plastic Product Mfg.,43.7415,-79.2891,0.0,0,0.0,0.0,0.0,0.0,0.0
+22340,Safedesign Apparel Ltd,Clothing & Clothing Accessories Whl.,43.611,-79.5249,0.0,0,0.0,0.0,0.0,0.0,0.0
+22360,Western Tarpaulin Co,All Other Miscellaneous Mfg.,43.7037,-79.5683,0.0,0,0.0,0.0,0.0,0.0,0.0
+22379,Bernardo Funeral Home Ltd,Funeral Homes,43.7097,-79.4538,0.0,0,0.0,0.0,0.0,0.0,0.0
+22436,Nobeltek Tools Inc,Machine Shops,43.767,-79.5458,0.0,0,0.0,0.0,0.0,0.0,0.0
+22466,Hume Intermedia Inc,Digital Printing,43.7407,-79.2888,0.0,0,0.0,0.0,0.0,0.0,0.0
+22518,McCowan Design and Manufacturing,Cold-Rolled Steel Shape Mfg.,43.7636,-79.2914,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+22519,Ocean Food Company,Seafood Product Preparation & Packaging,43.827,-79.2505,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+22534,Pure Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7033,-79.4147,0.0,0,0.0,0.0,0.0,0.0,0.0
+22543,Hendriks Precision Grinding Limited,Machine Shops,43.7608,-79.5659,0.0,0,0.0,0.0,0.0,0.0,0.0
+22548,ARBO Engineering Inc,Material Handling Equipment Mfg.,43.7551,-79.4696,0.0,0,0.0,0.0,0.0,0.0,0.0
+22586,Converter Man Limited,MV Transmission & Power Train Parts Mfg.,43.7043,-79.5901,0.0,0,0.0,0.0,0.0,0.0,0.0
+22599,Stork Dry Cleaners Inc,Coin-Operated Laundries & Dry Cleaners,43.7409,-79.4349,0.0,0,0.0,0.0,0.0,0.0,0.0
+22615,AM Dry Cleaners And Alterations,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7047,-79.3134,0.0,0,0.0,0.0,0.0,0.0,0.0
+22657,Dental Services Group Of Toronto,Medical Equipment & Supplies Mfg.,43.7644,-79.4761,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+22669,Ken's Auto Body Centre,"Automotive Body, Paint & Interior R&M",43.7674,-79.4736,0.0,0,0.0,0.0,0.0,0.0,0.0
+22743,Sylvia Cai,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7879,-79.2668,75.0,1,22.5,0.3333747516980716,0.2678461553271225,0.31546487678572865,30.77
+22756,Del Monte Custom Cleaners Ltd,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6227,-79.519,95.0,4,29.2,0.3513581477850879,0.2891280442323971,0.7324867603589634,38.77
+22757,Ryding Auto Body,"Automotive Body, Paint & Interior R&M",43.7006,-79.4525,476.0,2,142.8,0.47476815522604354,0.42153086484937385,0.5,46.21
+22774,Automobile Kollision Works Corp,General Automotive Repair,43.632,-79.5312,249.0,2,74.69999999999999,0.4250355581535833,0.3670924107149556,0.5,41.74
+22776,Corby's Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.745,-79.326,0.0,0,0.0,0.0,0.0,0.0,0.0
+22789,Midwest Calipers,Other Motor Vehicle Parts Mfg.,43.7555,-79.2688,0.0,0,0.0,0.0,0.0,0.0,0.0
+22799,New Way Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6785,-79.3902,0.0,0,0.0,0.0,0.0,0.0,0.0
+22803,EMI RFI Shield Plating Inc,"Coating, Engraving & Heat Treating Activities",43.7245,-79.2826,0.0,0,0.0,0.0,0.0,0.0,0.0
+22807,PFC Flexible Circuits Limited,Semiconductor & Electronic Component Mfg.,43.7601,-79.2979,1850.0,2,555.0,0.5791487301128643,0.536266474653122,0.5,55.59
+22810,Sketchley Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7113,-79.3109,36.0,1,10.799999999999999,0.27796420789332127,0.20939844228101614,0.31546487678572865,25.89
+22827,ABM Auto Center,"Automotive Body, Paint & Interior R&M",43.718,-79.5258,0.0,0,0.0,0.0,0.0,0.0,0.0
+22838,MTG General Machining Inc,Machine Shops,43.7558,-79.2666,0.0,0,0.0,0.0,0.0,0.0,0.0
+22841,Occluso Tech Inc,All Other Miscellaneous Mfg.,43.6605,-79.3858,0.0,0,0.0,0.0,0.0,0.0,0.0
+22858,Bridge Ramdewar,Wood Kitchen Cabinet & Counter Top Mfg.,43.7399,-79.5258,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+22859,Canadian Linen And Uniform Service Co,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6188,-79.5414,9311.0,3,2793.3,0.7035140107106437,0.6732496668434657,0.6309297535714573,68.77
+22870,Fiba Canning Inc,Truck Trailer Mfg.,43.8188,-79.2454,1766.0,1,529.8,0.5755736149715703,0.5323312499566132,0.31546487678572865,52.47
+22891,Mariani Metal Fabricators Limited,All Other Misc. Fabricated Metal Product Mfg.,43.7509,-79.6141,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+22894,George kelk Corporation,All Other Electrical Equip. & Component Mfg.,43.7576,-79.3557,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+22895,Swiss Print International,Other Printing,43.6977,-79.5683,0.0,0,0.0,0.0,0.0,0.0,0.0
+22902,CKF Inc,Polystyrene Foam Product Mfg.,43.7014,-79.5815,438267.0,1,131480.1,1.0,1.0,0.31546487678572865,90.67
+22915,Fabulous Printing Inc,Digital Printing,43.643,-79.4051,0.0,0,0.0,0.0,0.0,0.0,0.0
+22922,City Of Toronto F J Horgan Water Treatment Plant,Water Supply & Irrigation Systems,43.7631,-79.1565,1653.0,3,495.9,0.5704863465931396,0.5267319761323941,0.6309297535714573,56.8
+22928,GNC Intl Inc,Wood Kitchen Cabinet & Counter Top Mfg.,43.7634,-79.2802,0.0,0,0.0,0.0,0.0,0.0,0.0
+22929,City Of Toronto R C Harris Water Treatment Plant,Water Supply & Irrigation Systems,43.6746,-79.2793,0.0,0,0.0,0.0,0.0,0.0,0.0
+22933,Garyray Auto Collision Ltd,"Automotive Body, Paint & Interior R&M",43.7601,-79.5583,1182.0,2,354.6,0.544687432298902,0.4983453529481004,0.5,52.49
+22944,Siltech Corporation,Other Basic Organic Chemical Mfg.,43.7132,-79.3474,2891.0,3,867.4,0.6134983949409109,0.5740961666688763,0.6309297535714573,60.67
+22953,Summer's Sweet Memories,Ice Cream & Frozen Dessert Mfg.,43.6709,-79.3924,0.0,0,0.0,0.0,0.0,0.0,0.0
+22959,Davenport Kitchens,Other Building Material Dealers,43.7035,-79.3883,0.0,0,0.0,0.0,0.0,0.0,0.0
+22973,Marca College,Technical & Trade Schools,43.69,-79.2939,0.0,0,0.0,0.0,0.0,0.0,0.0
+22984,A A Auto Body,"Automotive Body, Paint & Interior R&M",43.7586,-79.2704,180.0,1,54.0,0.4001741785576724,0.33999006765677975,0.31546487678572865,36.72
+22985,Megacity Automotive Collision Centre,"Automotive Body, Paint & Interior R&M",43.6381,-79.5328,159.0,2,47.7,0.39068090264044464,0.3296686886932003,0.5,38.67
+23014,Weston MB Collision Ltd,"Automotive Body, Paint & Interior R&M",43.7563,-79.5506,3393.0,2,1017.9,0.6258196916139961,0.5876561589951735,0.5,59.79
+23019,Tower Litho Company Limited,Other Printing,43.8099,-79.1986,222.0,1,66.6,0.4162377142759285,0.3574908291916442,0.31546487678572865,38.16
+23027,Mount Pleasant Cemetery Crematorium And Mausoleum,Cemeteries & Crematoria,43.6953,-79.3853,0.0,0,0.0,0.0,0.0,0.0,0.0
+23029,Silva Custom Furniture Inc,Upholstered Household Furniture Mfg.,43.7616,-79.4849,0.0,0,0.0,0.0,0.0,0.0,0.0
+23032,Golden Summit Woodworking Inc,Other Wood Household Furniture Mfg.,43.8173,-79.3042,2349.0,2,704.7,0.5975227508747236,0.5564946618893246,0.5,57.24
+23033,Blue Bonnet Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7229,-79.4985,308.0,1,92.39999999999999,0.44134585863458403,0.38491882858708554,0.31546487678572865,40.41
+23038,Auto Collision Centre Ltd,"Automotive Body, Paint & Interior R&M",43.749,-79.5163,0.0,0,0.0,0.0,0.0,0.0,0.0
+23040,Golden Hanger Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6977,-79.3964,0.0,0,0.0,0.0,0.0,0.0,0.0
+23044,Progress Steel Fabricating And Welding Co Ltd,All Other Misc. Fabricated Metal Product Mfg.,43.8173,-79.2367,0.0,0,0.0,0.0,0.0,0.0,0.0
+23046,1625100 Ont Ltd Authentic Windows And Doors,Wood Window & Door Mfg.,43.7823,-79.2382,287.0,2,86.1,0.43592802779597917,0.37899393486085065,0.5,42.72
+23054,KIK Operating Partnership,Soap & Cleaning Compound Mfg.,43.71,-79.5659,1459.0,3,437.7,0.5608824563538829,0.5161629574137465,0.6309297535714573,55.93
+23055,Toronto Transit Commission Davisville Complex,Urban Transit Systems,43.6965,-79.3998,0.0,0,0.0,0.0,0.0,0.0,0.0
+23056,The Printing House Limited,Other Printing,43.6472,-79.3812,0.0,0,0.0,0.0,0.0,0.0,0.0
+23057,The Printing House Limited Branch 073,Other Printing,43.6434,-79.4082,0.0,0,0.0,0.0,0.0,0.0,0.0
+23067,The Printing House Limited Branch 003,Other Printing,43.6484,-79.3815,0.0,0,0.0,0.0,0.0,0.0,0.0
+23069,The Printing House Limited Branch 008,Other Printing,43.6161,-79.523,0.0,0,0.0,0.0,0.0,0.0,0.0
+23073,Canadian Linen Uniform Service Co,Linen & Uniform Supply,43.7596,-79.5289,2983.0,3,894.9,0.6159090928376655,0.5767412308049287,0.6309297535714573,60.88
+23077,Cintas Canada Limited,Linen & Uniform Supply,43.7778,-79.4815,873.0,2,261.9,0.5213837498283738,0.47272029563252826,0.5,50.4
+23078,The Printing House Limited,Other Printing,43.7715,-79.3355,0.0,0,0.0,0.0,0.0,0.0,0.0
+23080,The Printing House Limited Branch 001,Other Printing,43.6482,-79.3757,0.0,0,0.0,0.0,0.0,0.0,0.0
+23087,The Printing House Limited Branch 010,Other Printing,43.6493,-79.3836,0.0,0,0.0,0.0,0.0,0.0,0.0
+23090,The Printing House Limited Branch 028,Other Printing,43.6561,-79.3839,0.0,0,0.0,0.0,0.0,0.0,0.0
+23098,York Mills Automotive Centre,"Automotive Body, Paint & Interior R&M",43.7566,-79.3608,0.0,0,0.0,0.0,0.0,0.0,0.0
+23099,The Printing House Limited Branch 056,Other Printing,43.6602,-79.3856,0.0,0,0.0,0.0,0.0,0.0,0.0
+23101,The Printing House Limited Branch 66,Digital Printing,43.7706,-79.2789,0.0,0,0.0,0.0,0.0,0.0,0.0
+23102,The Printing House Limited Branch 071,Other Printing,43.6464,-79.3793,0.0,0,0.0,0.0,0.0,0.0,0.0
+23103,The Printing House Limited Branch 076,Other Printing,43.6711,-79.3828,0.0,0,0.0,0.0,0.0,0.0,0.0
+23105,The Printing House Limited,Other Printing,43.7061,-79.3982,0.0,0,0.0,0.0,0.0,0.0,0.0
+23107,Cintas Canada limited,Linen & Uniform Supply,43.7322,-79.2894,7405.0,3,2221.5,0.6858848282617449,0.6538251863052071,0.6309297535714573,67.18
+23108,The Printing House Limited Branch 089,Other Printing,43.648,-79.3831,0.0,0,0.0,0.0,0.0,0.0,0.0
+23110,King Recycling Waste Disposal Inc,All Other Waste Management Services,43.626,-79.5422,0.0,0,0.0,0.0,0.0,0.0,0.0
+23113,Norex Div Of Norspex Ltd,All Other Plastic Product Mfg.,43.7659,-79.1579,0.0,0,0.0,0.0,0.0,0.0,0.0
+23118,Sherway Collision,"Automotive Body, Paint & Interior R&M",43.6237,-79.5411,23.0,1,6.8999999999999995,0.24464284067540926,0.17535672152744394,0.31546487678572865,22.99
+23123,Wai Tack Kee Fine Food Inc,All Other Food Mfg.,43.8053,-79.1951,0.0,0,0.0,0.0,0.0,0.0,0.0
+23143,Cintas Canada limited,Linen & Uniform Supply,43.6111,-79.5245,3021.0,3,906.3,0.6168831968258452,0.5778140030072129,0.6309297535714573,60.97
+23147,Cintas Canada limited,Linen & Uniform Supply,43.6656,-79.4832,4225.0,3,1267.5,0.6426970483784902,0.6062460105313863,0.6309297535714573,63.29
+23154,Mega Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7039,-79.3609,106.0,1,31.799999999999997,0.35970885991177914,0.2961348538404075,0.31546487678572865,33.11
+23156,CTI Industries Inc,All Other Electrical Equip. & Component Mfg.,43.8136,-79.2399,0.0,0,0.0,0.0,0.0,0.0,0.0
+23158,Delsol Auto Collision Ltd,"Automotive Body, Paint & Interior R&M",43.7566,-79.5516,138.0,1,41.4,0.3798499914356972,0.3179154730363038,0.31546487678572865,34.9
+23174,Kilian Canada ULC,Ball & Roller Bearing Mfg.,43.613,-79.5269,0.0,4,0.0,0.0,0.0,0.7324867603589634,11.1
+23178,Coyle Corrugated Containers Inc,Other Printing,43.8136,-79.2404,910.0,1,273.0,0.5245754859059722,0.4762288825121344,0.31546487678572865,47.88
+23186,Platis Custom 1 Hr Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6434,-79.3755,423.0,1,126.89999999999999,0.46570135586877903,0.4115895285996609,0.31546487678572865,42.6
+23192,Radison Manufacturing Company Limited,Machine Shops,43.7382,-79.2877,5542.0,1,1662.6,0.6635798595054824,0.6292508130765041,0.31546487678572865,60.39
+23213,Superior Auto Centre Ltd,"Automotive Body, Paint & Interior R&M",43.632,-79.5289,467.0,2,140.1,0.4733018476126009,0.4199227202743555,0.5,46.07
+23217,Olympic Plastic Bags 1983 Ltd,Plastics Bag Manufacturing,43.7881,-79.2433,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+23235,St. Lawrence Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.669,-79.3823,0.0,0,0.0,0.0,0.0,0.0,0.0
+23247,Carstar On St Clair,"Automotive Body, Paint & Interior R&M",43.6684,-79.4863,199.0,1,59.699999999999996,0.40785823039701397,0.3483563784625058,0.31546487678572865,37.41
+23248,Med Health Laboratories Ltd,Medical & Diagnostic Laboratories,43.7111,-79.4683,272.0,1,81.6,0.4318105318286536,0.37449330528601243,0.31546487678572865,39.55
+23264,John's Unique Auto Body Ltd.,"Automotive Body, Paint & Interior R&M",43.6767,-79.4674,300.0,1,90.0,0.4393266262148524,0.38271023594009507,0.31546487678572865,40.23
+23277,427 Auto Collision Ltd,"Automotive Body, Paint & Interior R&M",43.6156,-79.527,227.0,2,68.1,0.4179446317089629,0.3593528346448634,0.5,41.11
+23278,Avenue Collision Inc,"Automotive Body, Paint & Interior R&M",43.6771,-79.4017,212.0,2,63.599999999999994,0.41270595626329326,0.35363954880376497,0.5,40.64
+23280,Assured Automotive Leaside,"Automotive Body, Paint & Interior R&M",43.7114,-79.359,106.0,1,31.799999999999997,0.35970885991177914,0.2961348538404075,0.31546487678572865,33.11
+23284,Viking Engineering Tool Co Ltd,Machine Shops,43.6702,-79.4369,0.0,0,0.0,0.0,0.0,0.0,0.0
+23289,Sanctuary Park Cemetery And Cremation Centre,Cemeteries & Crematoria,43.6976,-79.5334,0.0,0,0.0,0.0,0.0,0.0,0.0
+23290,Assured Automotive,"Automotive Body, Paint & Interior R&M",43.7592,-79.5566,118.0,1,35.4,0.3678912975383375,0.3049703192615417,0.31546487678572865,33.84
+23292,Forest Lawn Mausoleum And Cremation Centre,Cemeteries & Crematoria,43.7565,-79.4097,65.0,2,19.499999999999996,0.32251468736963657,0.2562588170049729,0.5,32.6
+23295,Westminister Cemetery Mausoleum And Cremation Centre,Cemeteries & Crematoria,43.7793,-79.4444,0.0,0,0.0,0.0,0.0,0.0,0.0
+23296,Bellwyck Packaging,Other Printing,43.8163,-79.2318,2699.0,1,809.6999999999999,0.6082102168748483,0.5682629103682165,0.31546487678572865,55.41
+23297,Riverside Cemetery And Cremation Centre,Cemeteries & Crematoria,43.6965,-79.5328,42.0,2,12.6,0.28953275487822977,0.2214434798417673,0.5,29.7
+23302,Apotex 400 Ormont,Pharmaceutical & Medicine Mfg.,43.7654,-79.5427,13394.0,2,4018.2,0.7315017870529203,0.7040898313153156,0.5,69.3
+23317,Assured Toronto West,"Automotive Body, Paint & Interior R&M",43.6708,-79.4668,120.0,1,36.0,0.369174307607812,0.3063574124425515,0.31546487678572865,33.95
+23321,Assured Scarborough West,"Automotive Body, Paint & Interior R&M",43.7637,-79.3004,154.0,1,46.199999999999996,0.3882369252385342,0.32701439579500413,0.31546487678572865,35.65
+23322,TKB Custom Millwork,Wood Kitchen Cabinet & Counter Top Mfg.,43.6831,-79.5903,118.0,2,35.4,0.3678912975383375,0.3049703192615417,0.5,36.63
+23324,409 Auto Collision,"Automotive Body, Paint & Interior R&M",43.7016,-79.5769,132.0,2,39.599999999999994,0.3764533159250156,0.3142350030168298,0.5,37.4
+23335,Wasteco,Waste Collection,43.7251,-79.4654,260.0,1,78.0,0.42835022693579317,0.37071259171998533,0.31546487678572865,39.24
+23338,Network Materials  Resources Inc,Waste Treatment & Disposal,43.7714,-79.2642,0.0,4,0.0,0.0,0.0,0.7324867603589634,11.1
+23348,Avenue 1 Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.728,-79.418,44.0,1,13.2,0.29303239488803046,0.2251062922296748,0.31546487678572865,27.21
+23350,York Auto Body,"Automotive Body, Paint & Interior R&M",43.6657,-79.4924,180.0,1,54.0,0.4001741785576724,0.33999006765677975,0.31546487678572865,36.72
+23352,Fourway Auto Body,"Automotive Body, Paint & Interior R&M",43.7349,-79.5999,373.0,2,111.9,0.4560422335604602,0.40100581126371015,0.5,44.53
+23353,Viele Brothers Auto Body,"Automotive Body, Paint & Interior R&M",43.683,-79.4893,0.0,0,0.0,0.0,0.0,0.0,0.0
+23356,Super Carstar Collision,"Automotive Body, Paint & Interior R&M",43.7187,-79.5734,305.0,2,91.5,0.4405948397783367,0.3840973291211049,0.5,43.14
+23362,Scarborough Toyota,"Automotive Body, Paint & Interior R&M",43.7262,-79.2947,555.0,2,166.5,0.4865652985453759,0.4344743487968466,0.5,47.27
+23365,Scarborotown Dodge Chrysler,"Automotive Body, Paint & Interior R&M",43.7923,-79.2464,608.0,2,182.4,0.49357421826152453,0.44216834596597027,0.5,47.9
+23366,Woodbridge Collision,"Automotive Body, Paint & Interior R&M",43.7466,-79.6205,1027.0,2,308.09999999999997,0.5338766482956825,0.4864554579997234,0.5,51.52
+23369,Massive Auto Collision,"Automotive Body, Paint & Interior R&M",43.6669,-79.4457,827.0,1,248.1,0.5172217188166026,0.4681456748494383,0.31546487678572865,47.22
+23381,Ofir Machine Shop Limited,Machine Shops,43.7796,-79.4888,0.0,4,0.0,0.0,0.0,0.7324867603589634,11.1
+23383,Betterway Drycleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.659,-79.3493,0.0,0,0.0,0.0,0.0,0.0,0.0
+23384,Arfil Auto Collision,"Automotive Body, Paint & Interior R&M",43.6696,-79.4604,0.0,0,0.0,0.0,0.0,0.0,0.0
+23392,Dufinch Services Ltd,"Automotive Body, Paint & Interior R&M",43.7736,-79.4765,0.0,0,0.0,0.0,0.0,0.0,0.0
+23411,Assured Yorkdale Collision,"Automotive Body, Paint & Interior R&M",43.7174,-79.4681,510.0,1,153.0,0.4800683857145788,0.42734501398322267,0.31546487678572865,43.89
+23413,Lowes Mfg Ltd Ta Decal Craft,Commercial Screen Printing,43.8106,-79.2905,0.0,0,0.0,0.0,0.0,0.0,0.0
+23423,Terrazzo Mosaic Tile Co Ltd,Terrazzo & Tile Work,43.6793,-79.4704,0.0,0,0.0,0.0,0.0,0.0,0.0
+23425,Tip Top Auto Collision Car Sales Ltd,"Automotive Body, Paint & Interior R&M",43.6926,-79.2818,361.0,2,108.3,0.45353183211251175,0.39825641572974385,0.5,44.3
+23432,Gelderland Machine And Manufacturing LTD,Commercial & Ind'l Mach. & Equip. R&M,43.8205,-79.249,0.0,0,0.0,0.0,0.0,0.0,0.0
+23433,Castle Auto Collision  Mechanical Service,"Automotive Body, Paint & Interior R&M",43.7004,-79.453,348.0,2,104.39999999999999,0.4507165403329892,0.3951737877985961,0.5,44.05
+23438,Rayans Motor Inc,"Automotive Body, Paint & Interior R&M",43.6873,-79.2896,0.0,0,0.0,0.0,0.0,0.0,0.0
+23442,Downtown Acura,"Automotive Body, Paint & Interior R&M",43.6537,-79.3615,563.0,2,168.89999999999998,0.4876650147079582,0.4356813682266066,0.5,47.36
+23453,Adheco Ltd,All Other Whl.,43.8268,-79.2479,0.0,0,0.0,0.0,0.0,0.0,0.0
+23456,The Vinyl Company Inc,All Other Plastic Product Mfg.,43.7646,-79.561,1024.0,2,307.2,0.5336516734969428,0.486208065053369,0.5,51.5
+23457,Omega Auto Centre,"Automotive Body, Paint & Interior R&M",43.6681,-79.4823,193.0,1,57.9,0.40551351648039513,0.34580241375426113,0.31546487678572865,37.2
+23458,AccuForm Machine Tool CoLtd,Cold-Rolled Steel Shape Mfg.,43.7384,-79.6085,0.0,2,0.0,0.0,0.0,0.5,7.58
+23472,Martino Bros Co Limited,"Automotive Body, Paint & Interior R&M",43.6656,-79.4833,703.0,2,210.9,0.504733075132942,0.4544233372300461,0.5,48.9
+23473,Martino Brothers Airport Company,"Automotive Body, Paint & Interior R&M",43.6912,-79.5732,616.0,2,184.8,0.4945788501019731,0.44327139911681757,0.5,47.99
+23480,Mill Street Brewery,Breweries,43.7184,-79.3124,320.0,1,96.0,0.4442787399226704,0.38812752102152687,0.31546487678572865,40.67
+23484,All Washed Up Laundromat,Coin-Operated Laundries & Dry Cleaners,43.8055,-79.221,0.0,0,0.0,0.0,0.0,0.0,0.0
+23485,Keele Street Collision,"Automotive Body, Paint & Interior R&M",43.7567,-79.4832,128.0,2,38.4,0.37410263488912104,0.3116895528036471,0.5,37.19
+23497,Inline Fiberglass Ltd,All Other Plastic Product Mfg.,43.691,-79.5964,112541.0,2,33762.299999999996,0.8953469748597468,0.8846582916458284,0.5,84.05
+23501,Academy Auto Collision,"Automotive Body, Paint & Interior R&M",43.7231,-79.5091,212.0,2,63.6,0.41270595626329326,0.35363954880376497,0.5,40.64
+23504,CK Collision Centres,"Automotive Body, Paint & Interior R&M",43.7934,-79.1533,628.0,2,188.39999999999998,0.4960616340950362,0.4448995467101894,0.5,48.12
+23509,Venture Steel Inc,Cold-Rolled Steel Shape Mfg.,43.7016,-79.5935,202.0,1,60.599999999999994,0.40900433825063326,0.34960509730466927,0.31546487678572865,37.51
+23514,SC Electric Canada Ltd,"Switchgear, Relay & Industrial Control Mfg.",43.703,-79.5713,8859.0,5,2657.7000000000003,0.6996837657276059,0.6690292581711841,0.8154648767857287,71.22
+23517,Fiera Foods Company,Commercial Bakeries & Frozen Product Mfg.,43.7189,-79.526,125820.0,2,37746.0,0.9039327136204574,0.8941208520549331,0.5,84.82
+23522,Tin Lee Electronics Ltd.,Other Communications Equipment Mfg.,43.6678,-79.3171,0.0,0,0.0,0.0,0.0,0.0,0.0
+23526,Tradition Fine Foods Ltd,Commercial Bakeries & Frozen Product Mfg.,43.703,-79.2772,13358.0,3,4007.4,0.7312946225712782,0.7038615454270568,0.6309297535714573,71.27
+23533,City Of Toronto High Level Pumping Station,Water Supply & Irrigation Systems,43.6788,-79.4023,0.0,0,0.0,0.0,0.0,0.0,0.0
+23534,I Can Autobody Repairs Limited,"Automotive Body, Paint & Interior R&M",43.7583,-79.5553,0.0,0,0.0,0.0,0.0,0.0,0.0
+23551,Western Collision,"Automotive Body, Paint & Interior R&M",43.7667,-79.5507,276.0,2,82.8,0.4329302435293443,0.3757170088521179,0.5,42.45
+23561,St John's Norway Cemetery Crematorium,Cemeteries & Crematoria,43.6731,-79.3089,2.0,1,0.6,0.08456988001089125,0.039876036835434635,0.31546487678572865,10.24
+23567,Fusebox Designs,Commercial Screen Printing,43.7937,-79.2552,0.0,0,0.0,0.0,0.0,0.0,0.0
+23569,Mondelez Canada Inc Gladstone Plant,Confectionery Mfg. from Purchased Chocolate,43.6515,-79.4305,5956.0,3,1786.8,0.6691247309150853,0.6353595952884943,0.6309297535714573,65.67
+23661,Ming Pao Newspapers Canada Ltd.,Newspaper Publishers,43.7978,-79.2681,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+23715,Upper Crust Ltd,Fat & Oil Refining & Blending,43.7752,-79.4916,436.0,1,130.79999999999998,0.4680260962735344,0.4141379197055282,0.31546487678572865,42.8
+23735,Canadian Memorial Chiropractic College,Universities,43.8023,-79.371,0.0,0,0.0,0.0,0.0,0.0,0.0
+23740,Univar Canada Ltd,Chemical (exc. Agr.) & Allied Product Whl.,43.7758,-79.479,1973.0,1,591.9,0.5841012324897414,0.5417182042599159,0.31546487678572865,53.24
+23741,Univar Canada Ltd,Chemical (exc. Agr.) & Allied Product Whl.,43.7399,-79.5304,299.0,2,89.69999999999999,0.4390704568530659,0.3824300750588851,0.5,43.0
+23762,Defranco Neill Ltd,All Other Misc. Fabricated Metal Product Mfg.,43.6713,-79.4302,0.0,0,0.0,0.0,0.0,0.0,0.0
+23769,Fortress Technology Inc,"Switchgear, Relay & Industrial Control Mfg.",43.802,-79.1944,0.0,0,0.0,0.0,0.0,0.0,0.0
+23772,Flavorcan International Inc,All Other Food Mfg.,43.8279,-79.2523,0.0,0,0.0,0.0,0.0,0.0,0.0
+23775,Borgo Contract Seating,Office Furniture (except Wood) Mfg.,43.692,-79.5979,631.0,1,189.29999999999998,0.4964279099114178,0.445301748036443,0.31546487678572865,45.35
+23790,Alexander Karpuchin Limited,All Other Misc. Wood Product Mfg.,43.6218,-79.5008,0.0,0,0.0,0.0,0.0,0.0,0.0
+23810,Alpha Laboratories Inc,Medical & Diagnostic Laboratories,43.7471,-79.2871,0.0,0,0.0,0.0,0.0,0.0,0.0
+23818,Millwick Waste Recycling Inc,Material Recovery Facilities,43.7588,-79.5611,124.0,1,37.199999999999996,0.371677904598744,0.3090653649613552,0.31546487678572865,34.18
+23822,Peerless Custom Rack Co Ltd,All Other Misc. Fabricated Metal Product Mfg.,43.7595,-79.5486,0.0,0,0.0,0.0,0.0,0.0,0.0
+23827,Bohne Spring Industries Limited,Spring (Heavy Gauge) Mfg.,43.6231,-79.5481,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+23836,Wing's Food Products,All Other Food Mfg.,43.6146,-79.5238,1515.0,4,454.5,0.5637798508104442,0.5193513111273838,0.7324867603589634,57.73
+23844,FTG Circuits,All Other Electrical Equip. & Component Mfg.,43.8211,-79.2346,0.0,2,0.0,0.0,0.0,0.5,7.58
+23859,Excalibur,Office Furniture (except Wood) Mfg.,43.7374,-79.5354,0.0,0,0.0,0.0,0.0,0.0,0.0
+23860,Patrick Lin,Machine Shops,43.8297,-79.2653,0.0,0,0.0,0.0,0.0,0.0,0.0
+23866,Manoucher Fine Food Inc,Commercial Bakeries & Frozen Product Mfg.,43.7276,-79.5286,1456.0,3,436.8,0.5607241179596744,0.5159887239725041,0.6309297535714573,55.92
+23876,Security Mirror Industries Limited,Glass Product Mfg. from Purchased Glass,43.7049,-79.4714,160.0,2,48.0,0.3911605230217641,0.3301897260099926,0.5,38.71
+23905,Owens Corning Insulating Systems Canada LP,All Other Non-Metallic Mineral Product Mfg.,43.8216,-79.2591,115836.0,7,34750.799999999996,0.8975683947006052,0.8871065727812592,0.946394630357186,91.02
+23911,Falcon Fasteners,Other Fabricated Wire Product Mfg.,43.76,-79.2758,4500.0,2,1350.0,0.6475500762347033,0.6115918999811332,0.5,61.75
+23914,Cascades Recovery Inc,Material Recovery Facilities,43.6276,-79.5429,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+23919,Toronto Water Laboratory,Testing Laboratories,43.7108,-79.537,122.0,2,36.599999999999994,0.37043628377533794,0.30772219216255714,0.5,36.86
+23931,Kobay Enstel Limited,Stamping,43.8191,-79.2513,592.0,3,177.6,0.49152474420626546,0.4399182611245549,0.6309297535714573,49.7
+23936,University Health Network Toronto General Hospital,General (exc. Paediatric) Hospitals,43.6596,-79.3871,0.0,2,0.0,0.0,0.0,0.5,7.58
+23937,University Health Network Toronto Western Hospital,General (exc. Paediatric) Hospitals,43.6534,-79.4064,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+23938,University Health Network Princess Margaret Cancer Centre,General (exc. Paediatric) Hospitals,43.6582,-79.3899,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+23940,Univeristy Health Network Toronto Rehab Bickle Centre,General (exc. Paediatric) Hospitals,43.6351,-79.4323,0.0,0,0.0,0.0,0.0,0.0,0.0
+23941,University Health Network Toronto Rehab University Centre,General (exc. Paediatric) Hospitals,43.6568,-79.3894,0.0,0,0.0,0.0,0.0,0.0,0.0
+23942,University Health Network Toronto Rehab Lyndhurst Centre,General (exc. Paediatric) Hospitals,43.7183,-79.3693,0.0,0,0.0,0.0,0.0,0.0,0.0
+23943,University Health Network Toronto Rehab Rumsey Cenre,General (exc. Paediatric) Hospitals,43.718,-79.3718,0.0,0,0.0,0.0,0.0,0.0,0.0
+23950,Active Metal Finishing Co Ltd,"Coating, Engraving & Heat Treating Activities",43.6343,-79.5267,451.0,3,135.29999999999998,0.47062405336823193,0.41698629533895604,0.6309297535714573,47.82
+23952,Torcad Limited,"Coating, Engraving & Heat Treating Activities",43.6322,-79.5279,5519.0,6,1655.6999999999998,0.663259780781638,0.6288981880244902,0.8856218745807111,69.0
+23954,Acadian Platers CoLtd,"Coating, Engraving & Heat Treating Activities",43.7143,-79.5832,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+23958,FCA Etobicoke Casting Plant,Non-Ferrous Die-Casting Foundries,43.5957,-79.5424,20127.0,3,6038.099999999999,0.7628499018692328,0.7386351184161524,0.6309297535714573,74.11
+23980,Pleasant Manufacturing Co Ltd,"Turned Product & Screw, Nut & Bolt Mfg.",43.7467,-79.606,0.0,5,0.0,0.0,0.0,0.8154648767857287,12.36
+23990,Durapaint Industries Limited,All Other Special Trade Contracting,43.8211,-79.2348,32306.0,4,9691.8,0.7992741285416993,0.7787762625350306,0.7324867603589634,78.93
+24021,Highland Funeral Home and Cremation Centre,Funeral Homes,43.7784,-79.3094,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+24031,ASB Heating Elements Ltd,Transformer (except Electronic) Mfg.,43.7085,-79.5693,167.0,5,50.1,0.3944367120120319,0.3337500516009417,0.8154648767857287,43.79
+24043,KJ Marketing Services,All Other Electrical Equip. & Component Mfg.,43.5998,-79.5317,0.0,2,0.0,0.0,0.0,0.5,7.58
+24055,Polytainers Inc,All Other Plastic Product Mfg.,43.633,-79.5239,2771.0,2,831.3,0.6102360922719898,0.5704938200218027,0.5,58.39
+24058,Deco Automotive,Stamping,43.7458,-79.6256,3312.0,4,993.5999999999999,0.6239602648161716,0.5856082224375755,0.7324867603589634,63.15
+24066,Swan Printing Lithograph Ltd,Other Printing,43.7605,-79.529,344.0,1,103.2,0.4498291665622807,0.39420230417155416,0.31546487678572865,41.17
+24069,Vacuum Metallizing Limited,"Coating, Engraving & Heat Treating Activities",43.796,-79.2465,21648.0,2,6494.4,0.7684576076487614,0.7448149434859739,0.5,72.63
+24077,Canadian Feed Screws,Machine Shops,43.8064,-79.1989,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+24080,Dufferin Iron Railings,Other Ornamental & Architec. Metal Prod. Mfg.,43.7056,-79.4719,267.0,1,80.1,0.4303875925668803,0.37293843019012907,0.31546487678572865,39.43
+24093,Progressive Anodizers Inc,All Other Misc. Fabricated Metal Product Mfg.,43.7385,-79.2878,1063.0,1,318.9,0.5365262765895336,0.48936923671633853,0.31546487678572865,48.96
+24105,L&M Precision Products Inc.,"Turned Product & Screw, Nut & Bolt Mfg.",43.7573,-79.563,1098.0,5,329.4,0.5390177180699247,0.4921092588000004,0.8154648767857287,56.76
+24110,Walker Environmental Group Inc.,Waste Treatment & Disposal,43.7688,-79.5405,0.0,0,0.0,0.0,0.0,0.0,0.0
+24112,MW Metal Spinning Ltd,Cold-Rolled Steel Shape Mfg.,43.773,-79.4729,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+24121,Conrex Steel Ltd,Cold-Rolled Steel Shape Mfg.,43.7178,-79.578,0.0,0,0.0,0.0,0.0,0.0,0.0
+24125,Flexmaster Canada Limited,All Other Misc. Fabricated Metal Product Mfg.,43.7042,-79.6094,95.0,5,28.5,0.3513581477850879,0.2871383589595695,0.8154648767857287,39.94
+24126,Modern Laundry and Dry Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6748,-79.4075,20.0,1,6.0,0.2343637513475139,0.1650948630049963,0.31546487678572865,22.11
+24128,Atlantic Packaging 111 Progress Avenue,Paperboard Mills,43.7714,-79.2764,64866.0,3,19459.8,0.852932608732052,0.8379127188730101,0.6309297535714573,82.22
+24129,New Forest Paper Mills LP,Paperboard Mills,43.7745,-79.2662,50155.0,3,15046.5,0.8331335885819636,0.8160921836826612,0.6309297535714573,80.43
+24138,Irving Consumer Products,Paper (except Newsprint) Mills,43.6943,-79.5058,140953.0,5,42285.9,0.9126754551057973,0.9037564692676873,0.8154648767857287,90.39
+24139,Kewbeach Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6682,-79.3085,0.0,0,0.0,0.0,0.0,0.0,0.0
+24141,SAN Steel Fabricating Ltd,Other Metalworking Machinery Mfg.,43.8083,-79.3396,978.0,3,293.4,0.5301170947269022,0.4823214934770398,0.6309297535714573,53.16
+24144,Dufferin Concrete Toronto,Ready-Mix Concrete Mfg.,43.6561,-79.3275,423.0,2,126.89999999999999,0.46570135586877903,0.4115895285996609,0.5,45.39
+24145,Dufferin Concrete Etobicoke,Ready-Mix Concrete Mfg.,43.7073,-79.578,507.0,2,152.1,0.4796151234304788,0.42684772972797286,0.5,46.64
+24146,Dufferin Concrete Scarborough,Ready-Mix Concrete Mfg.,43.7935,-79.2604,82.0,1,24.599999999999998,0.3401571453762492,0.27510794386341064,0.31546487678572865,31.37
+24147,Ontario Redimix Etobicoke,Ready-Mix Concrete Mfg.,43.7534,-79.6166,510.0,2,153.0,0.4800683857145788,0.42734501398322267,0.5,46.68
+24148,Ontario Redimix Portlands,Ready-Mix Concrete Mfg.,43.6376,-79.3492,516.0,2,154.8,0.48096698139129423,0.42833092280240526,0.5,46.76
+24161,Stanley Manufacturing Company Inc,Sign Mfg.,43.7184,-79.316,4197.0,1,1259.1,0.6421853164320095,0.6056823189837706,0.31546487678572865,58.47
+24173,Yarlmetal Fabrications Inc,Other Ornamental & Architec. Metal Prod. Mfg.,43.8178,-79.2482,0.0,5,0.0,0.0,0.0,0.8154648767857287,12.36
+24174,Quality Precision Crankshaft Co Ltd,Machine Shops,43.6354,-79.5214,0.0,0,0.0,0.0,0.0,0.0,0.0
+24179,L3Harris Wescam Don Mills,Navigational & Guidance Instruments Mfg.,43.725,-79.3445,1194.0,1,358.2,0.5454643487894141,0.49919995199012873,0.31546487678572865,49.76
+24180,Innocon Inc Wilson Avenue RMC Plant,Ready-Mix Concrete Mfg.,43.7288,-79.475,614.0,2,184.2,0.4943289186415859,0.4429969773904557,0.5,47.96
+24181,Innocon Inc. Commissioners Street RMC Plant,Ready-Mix Concrete Mfg.,43.6545,-79.331,624.0,2,187.2,0.49557053946499197,0.44436029504459584,0.5,48.07
+24185,M M Plating Inc,"Coating, Engraving & Heat Treating Activities",43.7357,-79.2403,33.0,5,9.9,0.2714550797565542,0.20266735626599128,0.8154648767857287,32.9
+24200,Ingot Metal Company Limited,Non-Ferrous (except Al) Smelting & Refining,43.7595,-79.5489,12600.0,6,3780.0,0.7267979709433258,0.6989064656628048,0.8856218745807111,74.72
+24201,Trillium Health Partners Queensway Health Centre,General (exc. Paediatric) Hospitals,43.6088,-79.5616,3470.0,3,1041.0,0.6275466014150272,0.5895581743640955,0.6309297535714573,61.93
+24203,Trench Limited Maybrook,Transformer (except Electronic) Mfg.,43.8249,-79.261,8872.0,3,2661.6,0.6997966315560135,0.6691536201757053,0.6309297535714573,68.43
+24204,Korex Canada Company,Soap & Cleaning Compound Mfg.,43.6285,-79.5191,0.0,0,0.0,0.0,0.0,0.0,0.0
+24218,Teva Canada Ltd,Packaging & Labelling Services,43.7894,-79.2296,2114.0,2,634.2,0.5894122224754187,0.5475650177322586,0.5,56.51
+24222,Crown Metal Packaging Canada LP Weston Plant,Metal Can Mfg.,43.7591,-79.5359,20569.0,4,6170.7,0.7645220222306143,0.7404778295111728,0.7324867603589634,75.8
+24226,MSP,"Turned Product & Screw, Nut & Bolt Mfg.",43.752,-79.5569,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+24232,693316 Ontario Limited Horner Avenue,Ready-Mix Concrete Mfg.,43.6078,-79.5178,376.0,2,112.8,0.45665724739515035,0.40167946084420664,0.5,44.58
+24234,Superior Pressing Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6734,-79.4135,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+24237,TS Tech Trimont Mfg Inc,Motor Vehicle Seating and Interior Trim Mfg.,43.7848,-79.248,9503.0,1,2850.9,0.7050850616107764,0.6749807664794154,0.31546487678572865,64.13
+24238,Mersen Canada Dn Ltd,All Other Electrical Equip. & Component Mfg.,43.6131,-79.5383,1.0,1,0.3,0.05335765355483933,0.022259502742557415,0.31546487678572865,8.11
+24239,Michener Institute Of Education At UHN,Technical & Trade Schools,43.6558,-79.3909,0.0,0,0.0,0.0,0.0,0.0,0.0
+24245,The Printing House Ltd Head Office,Head Offices,43.681,-79.4174,0.0,0,0.0,0.0,0.0,0.0,0.0
+24246,Sunnybrook Health Sciences Centre,General (exc. Paediatric) Hospitals,43.7215,-79.379,4934.0,2,1480.2,0.6546362138011501,0.6193979990676892,0.5,62.38
+24248,The Printing House Ltd,Quick Printing,43.6433,-79.3817,0.0,0,0.0,0.0,0.0,0.0,0.0
+24253,BLM Automatic Clutch Limited,Machine Shops,43.7808,-79.2381,273.0,1,81.89999999999999,0.43209199035858176,0.3748008898274914,0.31546487678572865,39.58
+24258,Saand Inc,Glass Product Mfg. from Purchased Glass,43.7043,-79.5901,12706.0,1,3811.7999999999997,0.7274428107462293,0.6996170428761797,0.31546487678572865,66.14
+24260,Enbridge Gas Inc,Natural Gas Distribution,43.7716,-79.3235,0.0,0,0.0,0.0,0.0,0.0,0.0
+24261,Metaplast Circuits Limited,All Other Electrical Equip. & Component Mfg.,43.7205,-79.2802,1941.0,3,582.3,0.5828431236330516,0.5403332339140539,0.6309297535714573,57.91
+24265,Huys Industries Ltd,All Other General-Purpose Machinery Mfg.,43.7593,-79.5569,0.0,0,0.0,0.0,0.0,0.0,0.0
+24266,D Crupi And Sons Limited Brimley Crushing Plant,Limestone Mining & Quarrying,43.7325,-79.2462,55.0,1,16.5,0.3098668320011407,0.2428347796835497,0.31546487678572865,28.69
+24268,Han Minh Machine Inc,Machine Shops,43.7582,-79.4665,0.0,4,0.0,0.0,0.0,0.7324867603589634,11.1
+24270,Moveable Inc,Other Printing,43.6384,-79.4257,134.0,1,40.199999999999996,0.37760227489892173,0.3154796509096655,0.31546487678572865,34.7
+24274,AT Designs,Jewellery & Silverware Mfg.,43.7787,-79.2378,1180.0,1,354.0,0.5445571804536515,0.4982020791007696,0.31546487678572865,49.68
+24276,Royal Laser MFG Inc.,All Other Misc. Fabricated Metal Product Mfg.,43.7375,-79.6208,0.0,0,0.0,0.0,0.0,0.0,0.0
+24278,Viva Media Packaging Canada Limited,All Other Plastic Product Mfg.,43.8115,-79.2499,2855.0,2,856.5,0.6125341382137467,0.5730245056935422,0.5,58.59
+24280,Mega Megardichian,All Other Non-Metallic Mineral Product Mfg.,43.7048,-79.2672,0.0,0,0.0,0.0,0.0,0.0,0.0
+24282,Viscor Inc,Lighting Fixture Mfg.,43.7087,-79.529,1369.0,3,410.7,0.5559846252248298,0.5107737204610632,0.6309297535714573,55.49
+24285,York University School Of The Arts Media Performance  Design,Universities,43.7745,-79.494,148.0,1,44.4,0.3851978928688221,0.32371558809254336,0.31546487678572865,35.38
+24286,Automatic Coating Ltd,"Coating, Engraving & Heat Treating Activities",43.795,-79.2531,2722.0,3,816.6,0.6088631851676845,0.5689819586289177,0.6309297535714573,60.25
+24287,Airborn Flexible Circuits Inc,Semiconductor & Electronic Component Mfg.,43.7116,-79.3116,1257.0,3,1255.6,0.5494192876498755,0.6054463376519063,0.6309297535714573,59.02
+24300,Production Paint Stripping Limited,"Coating, Engraving & Heat Treating Activities",43.6936,-79.5863,4191.0,3,1257.3,0.6420752155948701,0.6055610391365798,0.6309297535714573,63.24
+24322,York University Faculty Of Health And Science,Universities,43.7745,-79.494,2184.0,3,655.1999999999999,0.5919187311397824,0.5503245633039161,0.6309297535714573,58.72
+24334,Novellus Graphic Resource,Other Printing,43.7918,-79.228,2509.0,2,752.6999999999999,0.6025931476701053,0.5620776196676085,0.5,57.7
+24335,Westown Dry Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6967,-79.5439,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+24336,Jay Leatherkraft Limited,Office Supplies (except Paper) Mfg.,43.6239,-79.5066,0.0,0,0.0,0.0,0.0,0.0,0.0
+24344,University Of Toronto Lash Miller Chemical Laboratories,Universities,43.662,-79.3976,3545.0,1,1063.5,0.629192213936208,0.5913706757369265,0.31546487678572865,57.3
+24352,M  S Auto Refinishing,"Automotive Body, Paint & Interior R&M",43.6637,-79.3283,432.0,2,129.6,0.46731824004733985,0.41336192060889965,0.5,45.54
+24353,Ecolo Odor Control Technologies,All Other Misc. Chemical Product Mfg.,43.7525,-79.5576,0.0,0,0.0,0.0,0.0,0.0,0.0
+24363,Vienna Meats,Rendering & Meat Processing from Carcasses,43.7952,-79.253,465.0,1,139.5,0.47297217335207004,0.4195611772140385,0.31546487678572865,43.25
+24367,Nick's Carstar Collision Centre,"Automotive Body, Paint & Interior R&M",43.6727,-79.434,218.0,2,65.39999999999999,0.41484439438884746,0.3559712307820108,0.5,40.83
+24370,Dupont Auto Collision,"Automotive Body, Paint & Interior R&M",43.6709,-79.4255,357.0,2,107.1,0.4526765030663462,0.39731978826219827,0.5,44.22
+24376,All Steel Doors 2000 Ltd,Metal Window & Door Mfg.,43.7857,-79.2453,0.0,0,0.0,0.0,0.0,0.0,0.0
+24378,Apollo Health And Beauty Care Inc,Toilet Preparation Mfg.,43.7455,-79.3624,94079.0,2,28223.699999999997,0.8815538324342598,0.8694565665477821,0.5,82.81
+24382,Lynnpak,Plastics Bag Manufacturing,43.7968,-79.2478,52061.0,1,15618.3,0.8360046806229049,0.8192564046135641,0.31546487678572865,75.91
+24386,The University Of Toronto Earth Sciences Building,Universities,43.6615,-79.4002,163.0,1,48.9,0.3925817108741254,0.33173390976468664,0.31546487678572865,36.04
+24387,The University Of Toronto Medical Sciences Building,Universities,43.6611,-79.3944,1798.0,2,539.4,0.5769552125226265,0.5338519833025798,0.5,55.39
+24388,Geoffrey Nyambaka,Testing Laboratories,43.712,-79.5729,0.0,0,0.0,0.0,0.0,0.0,0.0
+24392,University Of Toronto Wallberg Building,Universities,43.6588,-79.3955,400.0,1,120.0,0.46140809084865775,0.4068843484424647,0.31546487678572865,42.21
+24393,University Of Toronto Ramsay Wright Zoology Building,Universities,43.6637,-79.399,0.0,0,0.0,0.0,0.0,0.0,0.0
+24394,University Of Toronto Scarborough Science Wing,Universities,43.785,-79.1852,8935.0,3,2680.5,0.7003412647220701,0.6697537287215749,0.6309297535714573,68.48
+24400,Great Lakes Brewery,Breweries,43.6226,-79.5048,435.0,1,130.5,0.4678497415064201,0.4139445843166655,0.31546487678572865,42.79
+24434,Trevor Owen Ltd,Textile Bag & Canvas Mills,43.7356,-79.2406,0.0,0,0.0,0.0,0.0,0.0,0.0
+24441,Tekran Instruments Corp,"Measuring, Medical & Controlling Devices Mfg.",43.7627,-79.277,0.0,0,0.0,0.0,0.0,0.0,0.0
+24445,Roman Metal Fabricating Ltd,Other Building Exterior Finishing Work,43.7676,-79.5545,0.0,0,0.0,0.0,0.0,0.0,0.0
+24474,Calstone Inc,Office Furniture (except Wood) Mfg.,43.8177,-79.2369,0.0,0,0.0,0.0,0.0,0.0,0.0
+24509,Questa Design Limited,Machine Shops,43.8049,-79.2007,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+24533,Dakar Inc,Wood Container & Pallet Mfg.,43.7608,-79.5599,0.0,0,0.0,0.0,0.0,0.0,0.0
+24538,Nova Supreme Dry Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6484,-79.3703,0.0,0,0.0,0.0,0.0,0.0,0.0
+24539,Forward Signs Inc,All Other Special Trade Contracting,43.7785,-79.2774,0.0,0,0.0,0.0,0.0,0.0,0.0
+24555,Smith and Long Contracting Ltd.,All Other Misc. Fabricated Metal Product Mfg.,43.7255,-79.4634,135.0,4,40.5,0.3781703868662329,0.3160951939465762,0.7324867603589634,41.08
+24573,Franklin Empire Inc,Electrical Wiring & Construction Supplies Whl,43.6941,-79.5989,0.0,0,0.0,0.0,0.0,0.0,0.0
+24590,WGI Mfg Inc,All Other Misc. Chemical Product Mfg.,43.8206,-79.238,6678.0,1,2003.3999999999999,0.6779312064815575,0.6450620346658221,0.31546487678572865,61.68
+24592,Universal Impex Corporation,Seasoning & Dressing Mfg.,43.7649,-79.562,0.0,0,0.0,0.0,0.0,0.0,0.0
+24622,First Spice Mixing Co Canada Ltd,Seasoning & Dressing Mfg.,43.7046,-79.4581,0.0,0,0.0,0.0,0.0,0.0,0.0
+24640,SA Armstrong Ltd,Pump & Compressor Mfg.,43.7338,-79.2861,5408.0,6,5180.5,0.6616960616702648,0.7256406869805,0.8856218745807111,72.84
+24646,Scarboro Steel Works Inc.,Structural Steel & Precast Concrete Erection,43.721,-79.2812,577.0,6,173.1,0.4895525059582691,0.4377531938580036,0.8856218745807111,53.38
+24673,Premier Fasteners Inc,"Turned Product & Screw, Nut & Bolt Mfg.",43.691,-79.5967,0.0,0,0.0,0.0,0.0,0.0,0.0
+24699,Acme Shelving And Store Fixtures,"All Other Misc. Store Retailers, n.e.c.",43.7829,-79.4737,0.0,0,0.0,0.0,0.0,0.0,0.0
+24725,Olympic Kitchens Inc,All Other Misc. Wood Product Mfg.,43.7947,-79.2537,12265.0,1,3679.5,0.7247237789904524,0.6966208302505472,0.31546487678572865,65.89
+24728,Chris Tang,All Other Food Mfg.,43.8106,-79.2382,0.0,0,0.0,0.0,0.0,0.0,0.0
+24730,Leland Industries Inc,Steel Wire Drawing,43.7934,-79.2671,0.0,0,0.0,0.0,0.0,0.0,0.0
+24737,H & R Design Jewellery Ltd,Jewellery & Silverware Mfg.,43.6527,-79.3778,0.0,0,0.0,0.0,0.0,0.0,0.0
+24739,Susan B Chartrand,Machine Shops,43.8175,-79.2323,0.0,0,0.0,0.0,0.0,0.0,0.0
+24741,CBM Weston RM Plant,Ready-Mix Concrete Mfg.,43.7574,-79.5533,291.0,2,87.3,0.4369898214876349,0.380154846607886,0.5,42.82
+24744,Cascades Recovery Inc Thornmount,Material Recovery Facilities,43.808,-79.195,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+24768,Golden Hanger Dry Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7526,-79.4526,0.0,0,0.0,0.0,0.0,0.0,0.0
+24779,Rainbow Sign Manufacturing Inc,All Other Whl.,43.7441,-79.5363,0.0,0,0.0,0.0,0.0,0.0,0.0
+24797,Exclussif Spices Wholesalers Ltd,Seasoning & Dressing Mfg.,43.8142,-79.2544,0.0,0,0.0,0.0,0.0,0.0,0.0
+24827,North York Iron,Metal Service Centres,43.7773,-79.4814,0.0,0,0.0,0.0,0.0,0.0,0.0
+24854,Asharp Sign Shop,Digital Printing,43.6192,-79.53,0.0,0,0.0,0.0,0.0,0.0,0.0
+24891,Central Perfect Bindery Limited,Support Activities for Printing,43.7737,-79.2694,0.0,0,0.0,0.0,0.0,0.0,0.0
+24898,Canadian Scale Company Limited,Cold-Rolled Steel Shape Mfg.,43.606,-79.526,0.0,0,0.0,0.0,0.0,0.0,0.0
+24937,Crown Custom Metal Spinning Inc,Primary Production of Alumina & Aluminum,43.7024,-79.5627,0.0,0,0.0,0.0,0.0,0.0,0.0
+24969,S P Flex Circuit Ltd,Computer & Peripheral Equipment Mfg.,43.8287,-79.247,0.0,0,0.0,0.0,0.0,0.0,0.0
+24971,G K Chemical Specialties,Soap & Cleaning Compound Mfg.,43.7356,-79.2404,354.0,2,106.2,0.45202871111865,0.39661046895372787,0.5,44.16
+24978,Lafarge Canada Commissioners St Aggregate Depot,Limestone Mining & Quarrying,43.6545,-79.331,3094.0,2,928.2,0.6187206075875165,0.579837555812888,0.5,59.15
+24982,Starplex Scientific Inc,Plastic Bottle Mfg.,43.7504,-79.6244,0.0,2,0.0,0.0,0.0,0.5,7.58
+24983,Quality Discount Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7207,-79.43,0.0,0,0.0,0.0,0.0,0.0,0.0
+25017,Auto Gallery Collision,"Automotive Body, Paint & Interior R&M",43.7921,-79.1569,112.0,2,33.6,0.36390874625855324,0.3006675505722047,0.5,36.28
+25030,Viva Healthcare Packaging Canada Ltd,All Other Plastic Product Mfg.,43.8195,-79.2295,94966.0,2,28489.8,0.8822762000605952,0.8702527021929543,0.5,82.87
+25031,Deer Park Collision Center,"Automotive Body, Paint & Interior R&M",43.7581,-79.5549,0.0,0,0.0,0.0,0.0,0.0,0.0
+25032,Tayco Panelink Ltd,Office Furniture (except Wood) Mfg.,43.6233,-79.5553,6505.0,4,1951.5,0.6759110167883364,0.6428362765650079,0.7324867603589634,67.82
+25041,The Hospital For Sick Children,General (exc. Paediatric) Hospitals,43.6566,-79.3889,208.0,1,62.4,0.41124659839229893,0.352048715138117,0.31546487678572865,37.71
+25042,Homa Signs Ltd,Sign Mfg.,43.7251,-79.4657,0.0,0,0.0,0.0,0.0,0.0,0.0
+25052,Highlight Auto Collision,"Automotive Body, Paint & Interior R&M",43.7052,-79.4772,443.0,2,132.9,0.4692493950138912,0.4154790703307763,0.5,45.71
+25058,St Lawrence Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6499,-79.37,35.0,1,10.5,0.27585506713146113,0.20721354961362914,0.31546487678572865,25.7
+25067,Metro Dock,Material Handling Equipment Mfg.,43.7569,-79.4866,5300.0,1,1590.0,0.6601434949824616,0.6254650640143682,0.31546487678572865,60.08
+25081,Chemical Vapour Metal Refining Inc,Other Scientific & Technical Consulting Serv.,43.7619,-79.5436,0.0,0,0.0,0.0,0.0,0.0,0.0
+25085,Butt's Pumps And Motors Ltd,Commercial & Ind'l Mach. & Equip. R&M,43.7926,-79.2265,0.0,0,0.0,0.0,0.0,0.0,0.0
+25092,High Life Heating Air Conditioning,All Other Special Trade Contracting,43.8205,-79.2958,0.0,0,0.0,0.0,0.0,0.0,0.0
+25097,R&S Door Maker LTD,All Other Misc. Wood Product Mfg.,43.637,-79.5261,0.0,0,0.0,0.0,0.0,0.0,0.0
+25114,Ah Fong Products Ltd,Frozen Food Mfg.,43.8279,-79.2631,0.0,0,0.0,0.0,0.0,0.0,0.0
+25125,STIM Canada Inc,Semiconductor & Electronic Component Mfg.,43.761,-79.4846,283.0,2,84.89999999999999,0.4348513833620807,0.3778169174666786,0.5,42.62
+25130,Dave Dental Labortory,Offices of All Other Health Practitioners,43.7409,-79.323,0.0,0,0.0,0.0,0.0,0.0,0.0
+25138,Penthouse Dry Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6774,-79.3588,0.0,0,0.0,0.0,0.0,0.0,0.0
+25139,Saand Rexdale,All Other Miscellaneous Mfg.,43.7046,-79.5985,0.0,0,0.0,0.0,0.0,0.0,0.0
+25145,Crystal Claire Cosmetics Inc,Toilet Preparation Mfg.,43.7042,-79.3508,16987.0,2,5096.099999999999,0.7497939342857073,0.7242473408532472,0.5,70.95
+25148,LCC Ontario Inc,Wood Kitchen Cabinet & Counter Top Mfg.,43.7977,-79.2651,0.0,0,0.0,0.0,0.0,0.0,0.0
+25149,Express Auto Collision,"Automotive Body, Paint & Interior R&M",43.6741,-79.3295,393.0,2,117.89999999999999,0.4600524539144255,0.40539895701680634,0.5,44.89
+25150,Olympic Coaters Ltd,All Other Misc. Chemical Product Mfg.,43.7444,-79.6216,732.0,3,219.6,0.5078405058615436,0.4578370934237236,0.6309297535714573,51.16
+25151,Autotek Electroplating Ltd,"Coating, Engraving & Heat Treating Activities",43.7429,-79.6235,526.0,2,157.79999999999998,0.48244171657400103,0.4299490642182706,0.5,46.9
+25157,SSAB Central Inc.,Iron & Steel Pipes & Tubes Mfg.,43.8249,-79.2424,0.0,0,0.0,0.0,0.0,0.0,0.0
+25185,Realform Technologies,Institutional Furniture Mfg.,43.746,-79.6169,0.0,0,0.0,0.0,0.0,0.0,0.0
+25238,WM New Toronto,All Other Waste Management Services,43.6063,-79.5089,0.0,0,0.0,0.0,0.0,0.0,0.0
+25249,CNC Metal Fabrication Inc,All Other Misc. Fabricated Metal Product Mfg.,43.7551,-79.4859,80.0,3,24.0,0.338279520043565,0.27309578687109476,0.6309297535714573,35.98
+25275,Brook Crompton,Electrical Wiring & Construction Supplies Whl,43.6951,-79.5896,0.0,0,0.0,0.0,0.0,0.0,0.0
+25279,Kruger Products Inc.,Sanitary Paper Product Mfg.,43.7238,-79.2822,0.0,0,0.0,0.0,0.0,0.0,0.0
+25284,Accurate Rolal Co Ltd,Other Printing,43.7165,-79.3095,129.0,1,38.699999999999996,0.37469706890222704,0.31233311070428255,0.31546487678572865,34.44
+25290,Micrometric Jig Boring & Jig Grinding,Machine Shops,43.7777,-79.2334,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+25299,Schuller Machine And Tool Ltd,Machine Shops,43.7294,-79.2434,0.0,2,0.0,0.0,0.0,0.5,7.58
+25300,Lush Manufacturing,Soap & Cleaning Compound Mfg.,43.6272,-79.5241,16020.0,2,4806.0,0.7452824479406611,0.7192757230678412,0.5,70.54
+25310,TransTec Inc,Transformer (except Electronic) Mfg.,43.8133,-79.2543,0.0,0,0.0,0.0,0.0,0.0,0.0
+25328,Vegfresh Inc,"Fruit & Vegetable Canning, Pickling & Drying",43.7645,-79.5529,0.0,0,0.0,0.0,0.0,0.0,0.0
+25332,Disco Organics Processing Facility,Waste Treatment & Disposal,43.7005,-79.6026,6886.0,3,2065.7999999999997,0.6802919391779577,0.647663014209113,0.6309297535714573,66.68
+25334,Finch Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7733,-79.4427,38.0,1,11.4,0.28201666049203095,0.21360634479226345,0.31546487678572865,26.24
+25345,AlteRego Corporation,Plastics Bag Manufacturing,43.7122,-79.5846,1700.0,2,510.0,0.5726432713910788,0.529105921793483,0.5,55.01
+25347,Essilor Canada Ltd,Medical Equipment & Supplies Mfg.,43.6165,-79.5207,890.0,3,267.0,0.522866673847471,0.47435038563228127,0.6309297535714573,52.51
+25351,CanaDatum Moulds Ltd,Industrial Mould Mfg.,43.6156,-79.5138,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+25352,The Printing House Branch 027,Digital Printing,43.6429,-79.4087,0.0,0,0.0,0.0,0.0,0.0,0.0
+25353,Beaver Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7346,-79.4331,36.0,1,10.799999999999999,0.27796420789332127,0.20939844228101614,0.31546487678572865,25.89
+25357,Stainless Piping Systems Inc,All Other Misc. Fabricated Metal Product Mfg.,43.7526,-79.6193,31.0,4,9.299999999999999,0.2667882677741967,0.19786369739567747,0.7324867603589634,31.23
+25360,Etobicoke Ironworks Ltd,Iron & Steel Pipes & Tubes Mfg.,43.7449,-79.5365,12718.0,7,3815.4,0.7275154722686638,0.6996971118579404,0.946394630357186,75.71
+25363,High Park Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6424,-79.4473,0.0,0,0.0,0.0,0.0,0.0,0.0
+25365,University Of Toronto Galbraith Building,Universities,43.6599,-79.3964,215.0,1,64.5,0.41378260069719175,0.3548133996395274,0.31546487678572865,37.94
+25366,University Of Toronto Dentistry Building,Universities,43.6562,-79.3871,380.0,1,114.0,0.4574696963316914,0.40256941980617056,0.31546487678572865,41.86
+25367,University Of Toronto Leslie L Dan Pharmacy Building,Universities,43.6598,-79.3917,305.0,1,91.5,0.4405948397783367,0.3840973291211049,0.31546487678572865,40.34
+25376,Wooden Woodworking Canada Inc,Other Millwork,43.8108,-79.2398,247.0,2,74.1,0.4244172510368042,0.36641727206133284,0.5,41.69
+25377,Holman Exhibits Limited,Sign Mfg.,43.76,-79.3584,0.0,0,0.0,0.0,0.0,0.0,0.0
+25380,George's Auto Body,"Automotive Body, Paint & Interior R&M",43.7178,-79.2568,104.0,1,31.2,0.3582563862137618,0.29456849594007206,0.31546487678572865,32.98
+25388,Crystal Claire Cosmetics,Toilet Preparation Mfg.,43.7854,-79.2422,16987.0,2,5096.099999999999,0.7497939342857073,0.7242473408532472,0.5,70.95
+25396,Bestway Donlands Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6876,-79.3402,467.0,1,140.1,0.4733018476126009,0.4199227202743555,0.31546487678572865,43.28
+25399,Hydroform Solutions,"Coating, Engraving & Heat Treating Activities",43.6931,-79.5987,2750.0,3,825.0,0.6096506991681874,0.5698491754785537,0.6309297535714573,60.32
+25400,ERCO Worldwide RD Lab,Testing Laboratories,43.6965,-79.5998,0.0,0,0.0,0.0,0.0,0.0,0.0
+25409,Crest Tech Corp,Machine Shops,43.7797,-79.2382,0.0,0,0.0,0.0,0.0,0.0,0.0
+25412,Lee's Printing,Data Processing Services,43.6677,-79.5,0.0,0,0.0,0.0,0.0,0.0,0.0
+25423,HB Morningstar Industries Limited,Other Fabricated Wire Product Mfg.,43.7267,-79.5283,0.0,0,0.0,0.0,0.0,0.0,0.0
+25437,GP Millwork,Other Millwork,43.8198,-79.2332,20073.0,2,6021.9,0.7626431032573459,0.7384072224047762,0.5,72.1
+25440,CBM New Toronto Plant,Ready-Mix Concrete Mfg.,43.6062,-79.5099,69.0,1,20.7,0.32704415975771,0.26108525428327173,0.31546487678572865,30.21
+25447,Nevada Metal Fabricating Ltd,Cold-Rolled Steel Shape Mfg.,43.7519,-79.5568,0.0,0,0.0,0.0,0.0,0.0,0.0
+25453,Delor Window Coverings,All Other Miscellaneous Mfg.,43.7634,-79.5584,0.0,0,0.0,0.0,0.0,0.0,0.0
+25469,Brother Dry Clenners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6676,-79.4575,119.0,4,35.7,0.3685354755416572,0.3056667005427058,0.7324867603589634,40.22
+25473,Supreme Food Equipment Co Ltd,Steel Wire Drawing,43.8094,-79.238,185.0,2,55.5,0.4022718239380168,0.34227294914325784,0.5,39.71
+25475,NL Technologies,All Other Electrical Equip. & Component Mfg.,43.8037,-79.339,0.0,0,0.0,0.0,0.0,0.0,0.0
+25486,Aromatics  Flavors Inc,Flavouring Syrup & Concentrate Mfg.,43.7586,-79.2702,0.0,0,0.0,0.0,0.0,0.0,0.0
+25495,Kingscross Auto Collision,"Automotive Body, Paint & Interior R&M",43.7273,-79.2853,0.0,0,0.0,0.0,0.0,0.0,0.0
+25498,RD Grodzinski Bakery Ltd,Retail Bakeries,43.7279,-79.4316,0.0,0,0.0,0.0,0.0,0.0,0.0
+25499,Arts Metal Finish Ltd,"Coating, Engraving & Heat Treating Activities",43.7769,-79.4867,675.0,5,202.50000000000003,0.5016088680719581,0.4509916099067898,0.8154648767857287,53.4
+25517,Millworks Custom Manufacturing 2001 Inc,Institutional Furniture Mfg.,43.6922,-79.4873,10351.0,3,3105.3,0.7116642086919535,0.6822302476819507,0.6309297535714573,69.5
+25525,LifeLabs Genetics,Medical & Diagnostic Laboratories,43.6789,-79.584,0.0,0,0.0,0.0,0.0,0.0,0.0
+25526,Belvika Trade & Packaging Ltd.,All Other Food Mfg.,43.8054,-79.1949,0.0,0,0.0,0.0,0.0,0.0,0.0
+25531,Abs Metalworks Ltd,Machine Shops,43.749,-79.5324,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+25538,Postmedia Islington Printing Division,Other Printing,43.715,-79.5552,4318.0,3,1295.3999999999999,0.6443727214385957,0.608091840395452,0.6309297535714573,63.44
+25539,Mechanical Engineering Building,Universities,43.6601,-79.3944,140.0,1,42.0,0.3809497075982795,0.31910765157181675,0.31546487678572865,35.0
+25541,GFL Environmental Inc Fenmar,Remediation Services,43.7579,-79.5413,61424.0,5,18427.199999999997,0.8487355615829321,0.8332871270370052,0.8154648767857287,84.64
+25549,Morrison Lamothe Inc,Commercial Bakeries & Frozen Product Mfg.,43.8234,-79.2631,0.0,0,0.0,0.0,0.0,0.0,0.0
+25551,Exhibit Store,All Other Misc. Wood Product Mfg.,43.8021,-79.235,0.0,0,0.0,0.0,0.0,0.0,0.0
+25558,Alps Auto Repair,"Automotive Body, Paint & Interior R&M",43.6126,-79.5001,660.0,2,198.0,0.4998815220994012,0.44909444318681907,0.5,48.46
+25562,Wholesome Harvest Bakery,Commercial Bakeries & Frozen Product Mfg.,43.6961,-79.5899,20506.0,3,6151.8,0.7642858964376058,0.7402176137439498,0.6309297535714573,74.24
+25564,Bax Canada Ltd,Wood Kitchen Cabinet & Counter Top Mfg.,43.7596,-79.2682,234.0,2,70.2,0.42027246245363625,0.3618928411712016,0.5,41.32
+25572,Champion Motors,General Automotive Repair,43.7413,-79.2889,135.0,1,40.5,0.3781703868662329,0.3160951939465762,0.31546487678572865,34.75
+25574,Somerset Kitchens Inc,All Other Misc. Wood Product Mfg.,43.7633,-79.5586,0.0,0,0.0,0.0,0.0,0.0,0.0
+25575,KGA Custom Kitchens Limited,Wood Kitchen Cabinet & Counter Top Mfg.,43.7591,-79.4696,2045.0,2,613.5,0.5868589777419227,0.544754119829294,0.5,56.28
+25586,Ventura Foods Canada,Seasoning & Dressing Mfg.,43.6115,-79.5264,2431.0,3,729.3,0.6001630194722684,0.5594017883842846,0.6309297535714573,59.47
+25598,Peerless Auto Collision Fv Inc,"Automotive Body, Paint & Interior R&M",43.6761,-79.4755,0.0,0,0.0,0.0,0.0,0.0,0.0
+25636,Sun Tech Automotives,"Automotive Body, Paint & Interior R&M",43.755,-79.2731,0.0,0,0.0,0.0,0.0,0.0,0.0
+25652,Unibody & Frame Centre,"Automotive Body, Paint & Interior R&M",43.7364,-79.2807,200.0,1,60.0,0.4082421654680929,0.34877466349923475,0.31546487678572865,37.44
+25655,Universal Auto Body Shop,"Automotive Body, Paint & Interior R&M",43.7403,-79.288,0.0,0,0.0,0.0,0.0,0.0,0.0
+25684,New Park Cleaners,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.7362,-79.4424,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+25705,Action Honda,"Automotive Body, Paint & Interior R&M",43.7656,-79.1924,0.0,0,0.0,0.0,0.0,0.0,0.0
+25711,Alarman Auto Care Inc,"Automotive Body, Paint & Interior R&M",43.7135,-79.262,0.0,0,0.0,0.0,0.0,0.0,0.0
+25723,Autosonic Service Station Inc,"Automotive Body, Paint & Interior R&M",43.6497,-79.4242,647.0,2,194.09999999999997,0.49835248070808297,0.4474152018273597,0.5,48.32
+25726,Avelar Auto Body,"Automotive Body, Paint & Interior R&M",43.6707,-79.434,0.0,0,0.0,0.0,0.0,0.0,0.0
+25728,Awin Advanced Auto Body Centre,"Automotive Body, Paint & Interior R&M",43.771,-79.4688,346.0,1,103.8,0.4502741320912717,0.394689436474962,0.31546487678572865,41.21
+25744,Carstar Toronto Eastern Ave,"Automotive Body, Paint & Interior R&M",43.6567,-79.3481,190.0,2,56.99999999999999,0.4043138222427837,0.34449601020437487,0.5,39.89
+25747,Central Auto Collision Service Ltd,"Automotive Body, Paint & Interior R&M",43.7402,-79.2882,676.0,2,202.8,0.5017226579259034,0.4511165919717662,0.5,48.63
+25769,Eddystone Auto Body & Repair,"Automotive Body, Paint & Interior R&M",43.7483,-79.5182,0.0,0,0.0,0.0,0.0,0.0,0.0
+25773,Excellence Auto Collision,"Automotive Body, Paint & Interior R&M",43.7573,-79.2703,889.0,2,266.7,0.5227802293440835,0.47425536007472896,0.5,50.52
+25778,First Rate Autobody Center,"Automotive Body, Paint & Interior R&M",43.7529,-79.5573,0.0,0,0.0,0.0,0.0,0.0,0.0
+25809,JSG Auto,"Automotive Body, Paint & Interior R&M",43.7442,-79.604,188.0,2,56.4,0.40350351136929635,0.34361376333141586,0.5,39.82
+25815,Kennedy Auto Collision,"Automotive Body, Paint & Interior R&M",43.7584,-79.2779,639.0,2,191.7,0.49739620975012333,0.446365055653542,0.5,48.24
+25828,Long Auto Collision Centre,"Automotive Body, Paint & Interior R&M",43.7583,-79.2716,178.0,2,53.4,0.39931884951150687,0.3390594333557553,0.5,39.44
+25864,Moss  Lam Inc,All Other Miscellaneous Mfg.,43.6279,-79.5234,0.0,0,0.0,0.0,0.0,0.0,0.0
+25867,Decorgragh Ltd,Quick Printing,43.6535,-79.3689,0.0,0,0.0,0.0,0.0,0.0,0.0
+25879,MacKinnon Bowes Limited,Funeral Homes,43.6831,-79.5819,10.0,1,3.0,0.184587153803906,0.117615953513988,0.31546487678572865,17.93
+25882,Ardaven Platers Inc,"Coating, Engraving & Heat Treating Activities",43.6001,-79.5331,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+25884,GFL Environmental Inc Unwin,Remediation Services,43.6434,-79.3395,9037.0,5,2711.1000000000004,0.7012149627470813,0.6707164224081367,0.8154648767857287,71.36
+25891,H & E Printing Service,Other Printing,43.7237,-79.5223,1855.0,1,556.5,0.5793563882430467,0.5364950566767035,0.31546487678572865,52.81
+25894,Best Cabinetry,Wood Kitchen Cabinet & Counter Top Mfg.,43.7595,-79.2687,0.0,0,0.0,0.0,0.0,0.0,0.0
+25910,Contour Machine Ltd.,All Other Misc. Fabricated Metal Product Mfg.,43.7617,-79.4837,0.0,0,0.0,0.0,0.0,0.0,0.0
+25913,RigMaster Power International Ltd.,Other Transportation Equipment Mfg.,43.7697,-79.2634,0.0,0,0.0,0.0,0.0,0.0,0.0
+25914,Tyndale University,Universities,43.7971,-79.3921,0.0,0,0.0,0.0,0.0,0.0,0.0
+25922,Centre For Commercialization Of Regenerative Medicine,"R&D in the Physical, Eng. & Life Sciences",43.6595,-79.3896,0.0,0,0.0,0.0,0.0,0.0,0.0
+25923,Club Coffee LP,Coffee & Tea Mfg.,43.7418,-79.6263,936.0,2,280.8,0.5267416995972227,0.47861035378219063,0.5,50.88
+25926,Amberwood Doors Inc,Wood Window & Door Mfg.,43.6911,-79.5866,0.0,0,0.0,0.0,0.0,0.0,0.0
+25928,Innocon Inc. Leaside RMC Plant,Ready-Mix Concrete Mfg.,43.7135,-79.3451,597.0,1,179.1,0.4921710857211205,0.4406278440990698,0.31546487678572865,44.97
+25929,Copacetic Woodwork & Design Ltd.,Wood Kitchen Cabinet & Counter Top Mfg.,43.7012,-79.2697,0.0,0,0.0,0.0,0.0,0.0,0.0
+25930,The Printing House Ltd. Branch 013,Other Printing,43.6524,-79.3676,0.0,0,0.0,0.0,0.0,0.0,0.0
+25931,Ingram Asphalt Inc.,Asphalt Paving Mixture & Block Mfg.,43.7019,-79.4681,2297.0,3,689.0999999999999,0.5958002613006682,0.5545981295139707,0.6309297535714573,59.07
+25932,Quantum Lifecycle Partners LP,Material Recovery Facilities,43.7654,-79.5486,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+25934,The Printing House Limited Branch 030,Other Printing,43.6884,-79.3938,0.0,0,0.0,0.0,0.0,0.0,0.0
+25937,Teskey Concrete Co Corp Murray Road RMC,Ready-Mix Concrete Mfg.,43.7327,-79.4738,1076.0,2,322.8,0.5374611079645174,0.4903973173653392,0.5,51.84
+25939,Leslie Barns,General Automotive Repair,43.6587,-79.3248,0.0,0,0.0,0.0,0.0,0.0,0.0
+25940,University of Toronto Scarborough Environmental Sciences and Chemistry Building,Universities,43.7873,-79.1906,365.0,1,109.5,0.4543777617481613,0.39918281594143146,0.31546487678572865,41.58
+25943,The Printing House Limited Branch 032,Other Printing,43.72,-79.4562,0.0,0,0.0,0.0,0.0,0.0,0.0
+25944,The Printing House Limited Branch 005,Other Printing,43.6559,-79.388,0.0,0,0.0,0.0,0.0,0.0,0.0
+25946,The Printing House Limited Branch 137,Other Printing,43.6335,-79.5277,0.0,0,0.0,0.0,0.0,0.0,0.0
+25980,Revive Auto Collision Inc.,"Automotive Body, Paint & Interior R&M",43.76,-79.5567,69.0,1,20.7,0.32704415975771,0.26108525428327173,0.31546487678572865,30.21
+25992,IAG Collision Centre,"Automotive Body, Paint & Interior R&M",43.697,-79.4504,410.0,2,123.0,0.46330421681463363,0.40896221498480484,0.5,45.18
+26005,Campus Auto Collision & Heavy Equipment Refinishing,"Automotive Body, Paint & Interior R&M",43.7584,-79.4856,0.0,0,0.0,0.0,0.0,0.0,0.0
+26036,ASSURED Etobicoke,"Automotive Body, Paint & Interior R&M",43.6206,-79.5416,121.0,1,36.3,0.3698078817372701,0.3070425465272888,0.31546487678572865,34.01
+26058,University Health Network Hillcrest Centre,Nursing Care Facilities,43.6781,-79.4159,0.0,0,0.0,0.0,0.0,0.0,0.0
+26063,EggSolutions - Global Egg Corporation Newbridge,All Other Food Mfg.,43.6264,-79.5399,1691.0,2,507.29999999999995,0.5722348947188494,0.5286564488765072,0.5,54.97
+26064,"EggSolutions (Global Egg Corporation, Horner)",All Other Food Mfg.,43.6061,-79.5222,8694.0,2,2608.2,0.6982366703469575,0.6674347702563654,0.5,66.31
+26093,Humber River Hospital,Medical & Diagnostic Laboratories,43.724,-79.4882,10000.0,2,3000.0,0.7090088511816987,0.6793043244271557,0.5,67.28
+26097,Deciem Inc.,Toilet Preparation Mfg.,43.6226,-79.5531,3118.0,2,935.4,0.6193152329234173,0.5804924285221298,0.5,59.2
+26098,Toronto Metropolitan University,Universities,43.6578,-79.3805,15262.0,5,4578.6,0.7415513796732048,0.7151641510100888,0.8154648767857287,74.99
+26103,Abacus Furniture,Other Wood Household Furniture Mfg.,43.6193,-79.5163,0.0,0,0.0,0.0,0.0,0.0,0.0
+26111,Bunge Loders Croklaan,Fat & Oil Refining & Blending,43.7008,-79.5803,1686.0,2,505.8,0.5720070791569635,0.5284057089350692,0.5,54.95
+26115,GFL Environmental Inc Vickers,Remediation Services,43.6246,-79.5542,9817.0,5,2945.1,0.7075872330547649,0.6777378611681147,0.8154648767857287,71.93
+26116,Prep Culinary a div. of TEJA Global Ltd.,All Other Food Mfg.,43.741,-79.6196,0.0,0,0.0,0.0,0.0,0.0,0.0
+29257,Amvic Corporation Passmore,Polystyrene Foam Product Mfg.,43.8282,-79.2611,77091.0,2,23127.3,0.8662238101982224,0.852561092500299,0.5,81.43
+29260,Ultra-Form Mfg 2021 Inc,Machine Shops,43.7489,-79.607,0.0,4,0.0,0.0,0.0,0.7324867603589634,11.1
+29261,Smith and Long Contracting Ltd.,All Other Misc. Fabricated Metal Product Mfg.,43.7006,-79.6007,0.0,0,0.0,0.0,0.0,0.0,0.0
+29262,Specific Biologics,"R&D in the Physical, Eng. & Life Sciences",43.6595,-79.3896,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+29264,Wonder Brands Inc.,All Other Food Mfg.,43.7037,-79.6032,223966.0,3,67189.8,0.9483216629085874,0.9430433090124175,0.6309297535714573,90.8
+29268,Bimbo Canada,Commercial Bakeries & Frozen Product Mfg.,43.8293,-79.2557,32953.0,2,9885.9,0.8008005204082496,0.7804584504246128,0.5,75.54
+29269,Redpath Sugar Ltd,Sugar Mfg.,43.6432,-79.3708,216492.0,4,64947.600000000006,0.945708962792868,0.940163759983316,0.7324867603589634,92.11
+29270,Alsco Uniforms,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.6682,-79.465,363.0,2,108.89999999999999,0.453955958927441,0.39872088026435987,0.5,44.34
+29272,Voyant Beauty Inc.,Soap & Cleaning Compound Mfg.,43.7097,-79.5672,1459.0,3,437.7,0.5608824563538829,0.5161629574137465,0.6309297535714573,55.93
+29273,Voyant Beauty Inc.,Soap & Cleaning Compound Mfg.,43.7086,-79.5674,2665.0,3,799.5,0.6072346988053553,0.5671886803275374,0.6309297535714573,60.1
+29274,Miller Concrete West Toronto,Ready-Mix Concrete Mfg.,43.7068,-79.5855,2199.0,2,659.7,0.59244538420092,0.5509043953032534,0.5,56.79
+29275,Miller Concrete East Toronto,Ready-Mix Concrete Mfg.,43.8315,-79.2423,1087.0,1,326.09999999999997,0.5382433475307509,0.4912576059537892,0.31546487678572865,49.11
+29276,Miller Paving Limited,Asphalt Paving Mixture & Block Mfg.,43.829,-79.2444,4366.0,1,1309.8,0.6452235206736519,0.6090290426690793,0.31546487678572865,58.74
+29277,ICS Universal Drum Reconditioning GP INC.,Commercial & Ind'l Mach. & Equip. R&M,43.6739,-79.4768,64843.0,4,19452.899999999998,0.8529053093830589,0.8378826320603909,0.7324867603589634,83.75
+29281,Nucap Industries Inc.,Motor Vehicle Metal Stamping,43.77,-79.29,0.0,0,0.0,0.0,0.0,0.0,0.0
+29282,NutriAg Ltd.,Packaging & Labelling Services,43.7012,-79.5789,0.0,1,0.0,0.0,0.0,0.31546487678572865,4.78
+29283,Blue Sky Dry Cleaner,Dry Cleaning & Laundry Serv. (exc. Coin-Op.),43.8295,-79.2539,0.0,0,0.0,0.0,0.0,0.0,0.0
+29286,CSN Formula,"Automotive Body, Paint & Interior R&M",43.8104,-79.2432,292.0,2,87.6,0.4372529972044073,0.3804426093815444,0.5,42.84
+29290,Precision Electronics Corporation,"Switchgear, Relay & Industrial Control Mfg.",43.7596,-79.4847,734.0,1,220.2,0.5080502575503845,0.4580675380464283,0.31546487678572865,46.4
+29291,Sunrise Exhaust Ltd,All Other Miscellaneous Mfg.,43.7592,-79.547,0.0,3,0.0,0.0,0.0,0.6309297535714573,9.56
+29293,GIP Paving Inc Wilson HMA Plant,Asphalt Paving Mixture & Block Mfg.,43.7288,-79.475,1033.0,3,309.9,0.5343246349461336,0.48694809021470853,0.6309297535714573,53.54
+29294,GIP Paving Inc. Leaside HMA Plant,Asphalt Paving Mixture & Block Mfg.,43.7098,-79.3569,337.0,2,101.1,0.4482512145171188,0.3924749720846045,0.5,43.83
+29297,Commercial Bakeries Corp.,Commercial Bakeries & Frozen Product Mfg.,43.7224,-79.5217,0.0,0,0.0,0.0,0.0,0.0,0.0
+29299,ABCORP,Other Printing,43.7713,-79.2644,1425.0,1,427.5,0.559068595612267,0.5141670439678476,0.31546487678572865,50.99
