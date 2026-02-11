@@ -565,7 +565,7 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
             }
 
             // Handlers - declared as functions so we can remove them
-            const onMapClickClose = (ev?: any) => {
+            const onMapClickClose = (_ev?: any) => {
               // map click outside popup should close it
               removeCustom()
             }
@@ -802,7 +802,7 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
         document.removeEventListener('click', onDocumentClick)
       }
 
-      const onMapClickClose = (ev?: any) => removeCustom()
+      const onMapClickClose = (_ev?: any) => removeCustom()
       const onMapMoveClose = () => removeCustom()
       const onResizeClose = () => removeCustom()
       const onDocumentClick = (evt: MouseEvent) => {
