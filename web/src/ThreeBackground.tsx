@@ -44,14 +44,18 @@ export default function ThreeBackground(): JSX.Element {
         ref.current.rotation.x = Math.sin(state.clock.elapsedTime * (0.1 + offset * 0.02)) * 0.2
       }
     })
-    return (
-      // @ts-ignore dynamic
-      <mesh ref={ref} rotation={[0.6 + offset * 0.1, 0, 0]} position={pos}>
-        {/* @ts-ignore dynamic */}
-        <torusBufferGeometry args={[2.2 + offset * 0.6, 0.14 + offset * 0.02, 64, 200]} />
-        {/* @ts-ignore dynamic */}
-        <meshStandardMaterial color={color} emissive={'#023047'} metalness={0.25} roughness={0.2} />
-      </mesh>
+    return React.createElement('mesh', {
+      ref,
+      rotation: [0.6 + offset * 0.1, 0, 0],
+      position: pos
+    },
+      React.createElement('torusBufferGeometry', { args: [2.2 + offset * 0.6, 0.14 + offset * 0.02, 64, 200] }),
+      React.createElement('meshStandardMaterial', {
+        color,
+        emissive: '#023047',
+        metalness: 0.25,
+        roughness: 0.2
+      })
     )
   }
 
@@ -65,37 +69,45 @@ export default function ThreeBackground(): JSX.Element {
         r.position.y = Math.cos(t * 0.9 + i) * (0.6 + i * 0.2)
       })
     })
-    return (
-      // @ts-ignore dynamic
-      <group>
-        {Array.from({ length: 6 }).map((_, i) => (
-          // @ts-ignore dynamic
-          <mesh key={i} ref={(el) => (refs.current[i] = el)} position={[Math.sin(i) * 1.5, Math.cos(i) * 0.7, -i * 0.6]}>
-            {/* @ts-ignore dynamic */}
-            <sphereBufferGeometry args={[0.06 + i * 0.01, 16, 16]} />
-            {/* @ts-ignore dynamic */}
-            <meshStandardMaterial color="#38bdf8" emissive="#0369a1" metalness={0.1} roughness={0.3} transparent opacity={0.9 - i * 0.08} />
-          </mesh>
-        ))}
-      </group>
+    return React.createElement('group', {},
+      Array.from({ length: 6 }).map((_, i) =>
+        React.createElement('mesh', {
+          key: i,
+          ref: (el: any) => (refs.current[i] = el),
+          position: [Math.sin(i) * 1.5, Math.cos(i) * 0.7, -i * 0.6]
+        },
+          React.createElement('sphereBufferGeometry', { args: [0.06 + i * 0.01, 16, 16] }),
+          React.createElement('meshStandardMaterial', {
+            color: '#38bdf8',
+            emissive: '#0369a1',
+            metalness: 0.1,
+            roughness: 0.3,
+            transparent: true,
+            opacity: 0.9 - i * 0.08
+          })
+        )
+      )
     )
   }
 
   return (
     <div style={{ position: 'fixed', inset: 0, zIndex: 0, pointerEvents: 'none' }} aria-hidden>
-      {/* @ts-ignore dynamic */}
-      <Canvas camera={{ position: [0, 0, 10], fov: 55 }} style={{ width: '100%', height: '100%' }}>
-        {/* @ts-ignore dynamic */}
-        <fog attach="fog" args={["#021025", 6, 18]} />
-        {/* @ts-ignore dynamic */}
-        <ambientLight intensity={0.55} />
-        {/* @ts-ignore dynamic */}
-        <directionalLight position={[5, 5, 6]} intensity={0.6} color="#a5f3fc" />
-        <FloatingTorus offset={0} color="#0ea5e9" pos={[0, -0.2, 0]} />
-        <FloatingTorus offset={1} color="#60a5fa" pos={[2.2, 0.8, -1.2]} />
-        <FloatingTorus offset={-1} color="#38bdf8" pos={[-2.0, 0.6, -1.8]} />
-        <FloatingSpheres />
-      </Canvas>
+      {React.createElement(Canvas, {
+        camera: { position: [0, 0, 10], fov: 55 },
+        style: { width: '100%', height: '100%' }
+      },
+        React.createElement('fog', { attach: 'fog', args: ['#021025', 6, 18] }),
+        React.createElement('ambientLight', { intensity: 0.55 }),
+        React.createElement('directionalLight', {
+          position: [5, 5, 6],
+          intensity: 0.6,
+          color: '#a5f3fc'
+        }),
+        React.createElement(FloatingTorus, { offset: 0, color: '#0ea5e9', pos: [0, -0.2, 0] }),
+        React.createElement(FloatingTorus, { offset: 1, color: '#60a5fa', pos: [2.2, 0.8, -1.2] }),
+        React.createElement(FloatingTorus, { offset: -1, color: '#38bdf8', pos: [-2.0, 0.6, -1.8] }),
+        React.createElement(FloatingSpheres)
+      )}
     </div>
   )
 }

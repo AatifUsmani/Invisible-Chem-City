@@ -389,41 +389,7 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
             chemicalsSection = `<div style="margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 12px;"><div style="font-weight: 600; margin-bottom: 8px; font-size: 12px;">🧪 Chemicals Released (${clicked.chemicals.length}):</div>${chemList}</div>`
           } else {
             chemicalsSection = '<div style="margin-top: 12px; font-size: 11px; opacity: 0.6;">No chemical data available</div>'
-          }
-          
-          const anomalyAlert = clicked.anomaly ? '<div style="color:#ef4444; font-weight: bold; margin-top: 8px; padding: 8px; background: rgba(239,68,68,0.1); border-radius: 3px;">⚠️ ANOMALY DETECTED</div>' : ''
-          
-          // Build complete popup HTML
-          const html = `
-            <div style="min-width: 380px; max-height: 85vh; overflow-y: auto; font-family: system-ui, -apple-system, sans-serif; color: #e4e4e7;">
-              <div style="border-bottom: 2px solid rgba(255,255,255,0.15); padding: 14px 16px; margin: 0 0 12px 0;">
-                <h3 style="margin: 0; font-size: 17px; font-weight: 700; color: #fafafa; line-height: 1.4;">${name}</h3>
-                <div style="font-size: 12px; color: #a1a1aa; margin-top: 4px;">📍 ${industry}</div>
-              </div>
-              
-              <div style="background: rgba(255,255,255,0.05); padding: 14px; border-radius: 6px; margin: 0 16px 14px; border-left: 3px solid rgba(255,255,255,0.2);">
-                <div style="margin-bottom: 12px;">
-                  <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                    <span style="font-size: 13px;"><strong>Risk Score</strong></span>
-                    <span style="color: ${riskColor}; font-weight: bold; font-size: 15px;">${riskScore} / 100</span>
-                  </div>
-                  <div style="font-size: 11px; opacity: 0.7;">Chemical release hazard level</div>
-                </div>
-                
-                <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px; margin-top: 12px;">
-                  <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-                    <span style="font-size: 13px;"><strong>Total Release</strong></span>
-                    <span style="font-weight: bold; font-size: 15px;">${totalRelease} kg</span>
-                  </div>
-                  <div style="font-size: 11px; opacity: 0.7;">Annual emissions to air/water</div>
-                </div>
-              </div>
-
-              <div style="padding: 0 16px 16px;">
-                ${chemicalsSection}
-              </div>
-              ${anomalyAlert}
-            </div>`
+          }          
           
           // Create popup content as actual DOM elements instead of HTML string
           const popupContainer = document.createElement('div')

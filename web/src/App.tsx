@@ -8,7 +8,7 @@ import ScenarioToggles from './ScenarioToggles.tsx'
 import Legend from './Legend.tsx'
 import Assistant from './assistant/Assistant.tsx'
 import './App.css'
-import ThreeBackground from './ThreeBackground'
+import ThreeBackground from './ThreeBackground.tsx'
 
 console.log('MAPBOX TOKEN:', import.meta.env.VITE_MAPBOX_TOKEN)
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN || ''
