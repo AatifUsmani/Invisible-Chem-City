@@ -20,4 +20,3 @@ dist/
 build/
 .ipynb_checkpoints/
 .DS_Store
-QUICKSTART.md
