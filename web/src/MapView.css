@@ -222,6 +222,7 @@
     top: 100px !important;     /* Sit below the search bar */
     right: 10px !important;    /* Pin to the right side */
     left: auto !important;
+    transform: none !important; /* Remove the translate centering */
     width: 280px !important;
     max-height: 50vh !important;
     padding: 15px !important;
