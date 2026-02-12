@@ -153,8 +153,11 @@
 
 @media (max-width: 768px) {
   .legend {
-    bottom: 20px !important; 
-    left: 10px !important;
+    bottom: 1px !important; 
+    left: 1px !important;
+    
+    transform: scale(0.75); 
+    transform-origin: bottom left;
     
     max-width: 180px; 
     max-height: 35vh;
