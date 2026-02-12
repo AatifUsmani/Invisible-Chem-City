@@ -340,7 +340,6 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
           console.log('🖱️ Point clicked:', e.features?.[0]?.properties)
           if (!e.features?.length) return
           const props: any = e.features[0].properties || {}
-          const coord = (e.features[0].geometry as any).coordinates.slice()
           const id = String(props.id) // Ensure string comparison
           
           console.log('📍 Looking for facility ID:', id, 'Type:', typeof id)
@@ -496,7 +495,6 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
 
             // append to body so popup floats above Mapbox canvas and controls
             const mapContainer = map.getContainer()
-            const mapRect = mapContainer.getBoundingClientRect()
             const custom = document.createElement('div')
             custom.id = 'custom-facility-popup'
             custom.style.position = 'absolute'
@@ -522,22 +520,24 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
             custom.style.opacity = '0'
             custom.style.transform = 'translate(-50%, -105%) scale(0.98)'
             custom.style.transition = 'opacity 260ms ease, transform 260ms cubic-bezier(.2,.9,.2,1)'
-            document.body.appendChild(custom)
+            mapContainer.appendChild(custom)
 
-            // Position the popup using screen coordinates relative to viewport
-            const pt = map.project(coord)
-            const left = Math.round(mapRect.left + pt.x)
-            const top = Math.round(mapRect.top + pt.y)
-            custom.style.left = left + 'px'
-            custom.style.top = top + 'px'
+                        // Position popup: Now handled primarily by CSS classes
+            // We just need to ensure the ID is set and it's attached to the DOM
+
+            custom.id = 'custom-facility-popup';
+
+            // Attach to map container (if not already attached)
+            if (!document.getElementById('custom-facility-popup')) {
+              mapContainer.appendChild(custom);
+            }
+
 
             // Trigger enter animation
             requestAnimationFrame(() => {
               custom.style.opacity = '1'
               custom.style.transform = 'translate(-50%, -100%) scale(1)'
             })
-
-            console.log('✅ Custom popup appended to body at viewport coords', { left, top })
 
             // Close handlers
             const removeCustom = () => {
@@ -668,7 +668,6 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
       if (prev && prev.parentElement) prev.parentElement.removeChild(prev)
 
       const mapContainer = map.getContainer()
-      const mapRect = mapContainer.getBoundingClientRect()
 
       const popupContainer = document.createElement('div')
       popupContainer.className = 'custom-popup-content'
@@ -766,17 +765,21 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
       custom.style.opacity = '0'
       custom.style.transform = 'translate(-50%, -105%) scale(0.98)'
       custom.style.transition = 'opacity 260ms ease, transform 260ms cubic-bezier(.2,.9,.2,1)'
-      document.body.appendChild(custom)
+      mapContainer.appendChild(custom) // Append to map, not body
 
-      const pt = map.project(coord)
-      const left = Math.round(mapRect.left + pt.x)
-      const top = Math.round(mapRect.top + pt.y)
-      custom.style.left = left + 'px'
-      custom.style.top = top + 'px'
-      requestAnimationFrame(() => {
-        custom.style.opacity = '1'
-        custom.style.transform = 'translate(-50%, -100%) scale(1)'
-      })
+    
+      // Position popup: Now handled primarily by CSS classes
+      // We just need to ensure the ID is set and it's attached to the DOM
+
+      custom.id = 'custom-facility-popup';
+
+      // Remove all the 'let top/left' and 'mapRect' math logic.
+      // The CSS handles the 50% left and 65% top positioning.
+
+      // Attach to map container (if not already attached)
+      if (!document.getElementById('custom-facility-popup')) {
+        mapContainer.appendChild(custom);
+      }
 
       const removeCustom = () => {
         const el = document.getElementById('custom-facility-popup')
