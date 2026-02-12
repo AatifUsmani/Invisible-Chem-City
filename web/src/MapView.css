@@ -205,9 +205,9 @@
 
 /* Final Mobile Overrides */
 @media (max-width: 768px) {
-  /* Fix Search Bar */
+
   .find-my-risk-container {
-    top: 10px !important;
+    top: 5px !important;
     right: 10px !important;
     left: 10px !important;
     width: auto !important;
@@ -217,14 +217,19 @@
     font-size: 16px !important; /* Forces iOS not to zoom in */
   }
 
-  /* Fix Facility Popup */
+  /* Facility Popup */
   #custom-facility-popup {
-    width: 95vw !important;
-    max-height: 85vh !important;
+    top: 100px !important;     /* Sit below the search bar */
+    right: 10px !important;    /* Pin to the right side */
+    left: auto !important;
+    width: 280px !important;
+    max-height: 50vh !important;
     padding: 15px !important;
+    border-radius: 12px;
+    box-shadow: -5px 10px 30px rgba(0, 0, 0, 0.6);
   }
 
   .risk-score-value {
-    font-size: 28px !important;
+    font-size: 24px !important;
   }
 }
