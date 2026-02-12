@@ -1,24 +1,16 @@
-# Invisible City — Short Narrative for Judges & Recruiters
+# Invisible City — Project Narrative
 
-## What we did
+## The Problem
+Toronto is home to thousands of industrial facilities, many of which release chemicals as part of daily operations. While this data is public, it is buried in massive CSV files that the average citizen cannot interpret. I wanted to create a tool that doesn't just show "where" facilities are, but "how much they matter" to your health.
 
-We mapped **chemical risk** and **quiet anomalies** across Toronto using facility-level release data (NPRI-style). No ground-truth “risk” label exists; we defined risk from amount released, toxicity proxy, and frequency, then combined these into an interpretable score. We used **Isolation Forest** to flag facilities that behave unusually compared to peers in the same industry.
+## What I Built
+I developed an end-to-end data pipeline and visualization platform. 
+1. **The Pipeline:** I built `run_pipeline.py` to handle the heavy lifting. It cleans the raw ChemTRAC data, applies toxicity weights based on chemical types (carcinogens, neurotoxins, etc.), and runs an **Isolation Forest** model to detect anomalies—facilities that are "behaving strangely" compared to their industry peers.
+2. **The Interface:** Using Mapbox and React, I created a "Dark Mode" visualization where risk is shown as glowing plumes. I implemented a custom Haversine-based search engine that lets users find their personal risk score by address.
+3. **The Assistant:** To make the data accessible, I built a React-based Assistant component. It acts as a bridge between complex data and the user, answering questions about the map in real-time.
 
-## Why it matters
+## The ML Strategy
+Since there is no "ground truth" for what a "dangerous" facility is, I used **unsupervised learning**. By industry-normalizing the data, my Isolation Forest model flags facilities that are statistical outliers. This helps focus attention on facilities that might need more oversight, not just the ones that are the largest.
 
-- **Risk score**: Surfaces areas and facilities that concentrate higher emissions and more toxic substances. The formula is transparent (weighted sum of normalized features).
-- **Anomalies**: Facilities that look very different from others in their sector (e.g. one metal shop releasing 10× more than similar facilities). This is a statistical flag, not a legal finding — it helps focus attention where behavior is unusual.
-
-## What you see
-
-1. **Map**: Toronto with each facility as a point; **color = risk score** (green → red), **black border = anomaly**.
-2. **Chart**: Distribution of risk scores with the **top 5%** and **anomalies** highlighted.
-3. **CSVs**: Clean facility table with `risk_score` and `anomaly` for further analysis.
-
-## Tech in one sentence
-
-Pandas for cleaning and feature engineering; sklearn for normalization, optional regression, and Isolation Forest; Folium for the map; matplotlib for the distribution plot.
-
-## How to run
-
-From project root: install deps (`pip install -r requirements.txt`), run notebooks in order (data_cleaning → risk_model → anomaly_detection), then `python scripts/build_map.py`. Open `output/map.html` in a browser.
+## Conclusion
+This project demonstrates my ability to handle full-stack development, geospatial data, and machine learning to turn raw data into a narrative that can influence public awareness.

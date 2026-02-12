@@ -1,6 +1,6 @@
 .legend {
   position: absolute;
-  bottom: 100px; /* Moved down significantly so it doesn't block stories */
+  bottom: 50px; /* Moved down significantly so it doesn't block stories */
   left: 20px;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
@@ -48,6 +48,17 @@
   gap: 8px;
   transition: background 0.2s;
   font-family: inherit;
+  position: relative; 
+  z-index: 10;
+}
+
+.legend-section-content {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /* This keeps the Risk Score text inside its box */
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .legend-section-header:hover {
@@ -139,10 +150,57 @@
 
 @media (max-width: 768px) {
   .legend {
-    bottom: 80px; /* On mobile, position it above scenario controls */
-    left: 10px;
-    right: auto;
-    max-width: 260px;
-    max-height: 50vh;
+    /* Move it further into the corner */
+    bottom: 20px !important; 
+    left: 10px !important;
+    
+    /* Shrink the overall size */
+    max-width: 180px; 
+    max-height: 35vh;
+    background: rgba(0, 0, 0, 0.9); /* More opaque to stay readable when small */
+    border-radius: 6px;
+  }
+
+  /* Shrink text and spacing so it doesn't feel 'huge' */
+  .legend-header {
+    padding: 8px 12px;
+  }
+
+  .legend-title {
+    font-size: 11px;
+  }
+
+  .legend-section-header {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+
+  .legend-section-content {
+    padding: 8px 12px;
+  }
+
+  .legend-label {
+    font-size: 10px;
+  }
+
+  .legend-description {
+    font-size: 9px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .legend-color {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* AUTO-HIDE legend when the facility popup is open */
+  /* This prevents the 'blocking' entirely */
+  .map-view:has(#custom-facility-popup) .legend {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-20px);
+    transition: all 0.2s ease;
   }
 }

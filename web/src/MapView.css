@@ -1,62 +1,230 @@
-.map-view {
+/* --- BASE MAP CONTAINER --- */
+.map-view-main {
   width: 100%;
   height: 100%;
-  min-height: 70vh;
   position: relative;
   overflow: hidden;
+  background: #000;
 }
 
+/* --- CUSTOM POPUP (CENTERED ON CLICK) --- */
 #custom-facility-popup {
-  /* Positioning: Locked to center */
   position: absolute !important;
   left: 50% !important;
   top: 50% !important;
   transform: translate(-50%, -50%) !important;
-  
-  /* Visuals: Brighter & High Contrast */
-  width: 560px;
-  max-width: 92vw; /* Mobile optimization */
-  max-height: 80vh;
-  background: #1c1c1f !important; /* Solid, brighter dark gray */
+  width: 480px;
+  max-width: 90vw;
+  background: #1c1c1f !important;
   color: #f4f4f5 !important;
-  border: 1px solid rgba(255, 255, 255, 0.15); /* Brighter border */
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 255, 255, 0.05); /* Outer glow */
-  
-  z-index: 999999 !important; /* Force to the very front */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  z-index: 1000 !important;
   overflow-y: auto;
   pointer-events: auto;
-  
-  /* The Animation: Controlled here only */
-  animation: popupReveal 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation: popupReveal 0.3s ease-out;
 }
 
 @keyframes popupReveal {
-  from { 
-    opacity: 0; 
-    transform: translate(-50%, -45%) scale(0.92); 
-  }
-  to { 
-    opacity: 1; 
-    transform: translate(-50%, -50%) scale(1); 
-  }
+  from { opacity: 0; transform: translate(-50%, -45%) scale(0.95); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
 
-/* Mobile Adjustments */
-@media (max-width: 640px) {
+.close-popup-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* --- FIND MY RISK SEARCH BAR (TOP RIGHT) --- */
+.find-my-risk-container {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 500; /* High enough to be over map but under popups */
+  width: 320px;
+}
+
+.search-bar-glass {
+  display: flex;
+  align-items: center;
+  background: rgba(28, 28, 31, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 6px 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.2s;
+}
+
+.search-bar-glass:focus-within {
+  border-color: #3b82f6;
+}
+
+.search-bar-glass input {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.search-bar-glass button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.search-bar-glass button:hover {
+  background: #2563eb;
+  transform: translateX(2px);
+}
+
+.search-bar-glass button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* --- COMMUNITY RISK RESULT CARD --- */
+.community-risk-card {
+  position: absolute;
+  top: 95px;
+  right: 25px;
+  z-index: 499;
+  width: 320px;
+  background: #1c1c1f;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  animation: cardSlideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cardSlideIn {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.close-risk-card {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #52525b;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.close-risk-card:hover { color: #fff; }
+
+.risk-address {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 20px;
+  color: #fff;
+  padding-right: 20px;
+  line-height: 1.2;
+}
+
+.risk-data-flex {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.risk-score-circle {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid #22c55e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.score-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.score-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+.risk-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-item {
+  font-size: 13px;
+  color: #a1a1aa;
+}
+
+.stat-item strong {
+  color: #fff;
+}
+
+/* --- CLUSTER MARKER INITIALS (OPTIONAL UI IMPROVEMENT) --- */
+.marker-initials {
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0,0,0,0.8);
+  pointer-events: none;
+}
+
+/* Final Mobile Overrides */
+@media (max-width: 768px) {
+  /* Fix Search Bar */
+  .find-my-risk-container {
+    top: 10px !important;
+    right: 10px !important;
+    left: 10px !important;
+    width: auto !important;
+  }
+
+  .search-bar-glass input {
+    font-size: 16px !important; /* Forces iOS not to zoom in */
+  }
+
+  /* Fix Facility Popup */
   #custom-facility-popup {
-    width: 95vw;
-    top: auto !important;
-    bottom: 20px !important;
-    transform: translate(-50%, 0) !important;
+    width: 95vw !important;
+    max-height: 85vh !important;
+    padding: 15px !important;
   }
-  
-  @keyframes popupReveal {
-    from { opacity: 0; transform: translate(-50%, 20px); }
-    to { opacity: 1; transform: translate(-50%, 0); }
-  }
-}
 
-.custom-popup-content {
-  padding: 20px;
+  .risk-score-value {
+    font-size: 28px !important;
+  }
 }

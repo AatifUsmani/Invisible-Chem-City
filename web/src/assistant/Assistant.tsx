@@ -13,16 +13,23 @@ interface Message {
   role: 'user' | 'assistant'
   content: string
   timestamp: Date
+  buttons?: { label: string; action: string }[]
 }
 
-export default function Assistant({ facilities, selectedZone }: AssistantProps) {
+export default function Assistant({ facilities }: AssistantProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '0',
       role: 'assistant',
-      content: 'Hi! I\'m the ChemCity Assistant. Ask me anything about chemical facilities, risk scores, releases, or what you\'re seeing on the map.',
+      content: 'Hi! I can help you understand Toronto\'s chemical risks. What would you like to explore?',
       timestamp: new Date(),
+      buttons: [
+        { label: '🏆 Highest Risk Facilities', action: 'highest_risk' },
+        { label: '⚠️ Anomalies Explained', action: 'anomalies' },
+        { label: '🧪 Toxic Chemicals', action: 'chemicals' },
+        { label: '📊 How Risk is Calculated', action: 'risk_calc' },
+      ],
     },
   ])
   const [input, setInput] = useState('')
@@ -37,98 +44,204 @@ export default function Assistant({ facilities, selectedZone }: AssistantProps) 
     scrollToBottom()
   }, [messages])
 
-  const generateAnswer = (query: string): string => {
-    const lowerQuery = query.toLowerCase()
-
-    // Risk-related questions
-    if (lowerQuery.includes('risk')) {
-      if (lowerQuery.includes('highest') || lowerQuery.includes('highest risk')) {
-        const sorted = [...facilities].sort((a, b) => (b.risk_score ?? 0) - (a.risk_score ?? 0))
-        const top = sorted.slice(0, 3)
-        return `The facilities with highest risk scores are:\n${top.map(f => `• ${f.name}: ${f.risk_score?.toFixed(2)}`).join('\n')}`
-      }
-      if (lowerQuery.includes('how is risk calculated')) {
-        return 'Risk scores are calculated using:\n• Total chemical release (45%)\n• Exposure pathways (40%): air, water, land, disposal, recycling\n• Number of chemicals (15%)\nThe score is normalized 0-100.'
-      }
-      if (lowerQuery.includes('what does risk score')) {
-        return 'Risk score (0-100) indicates a facility\'s potential exposure hazard:\n• 0-33: Low risk (green)\n• 33-66: Medium risk (yellow)\n• 66-100: High risk (red)'
-      }
+  const handleButtonClick = (action: string) => {
+    const userMessage: Message = {
+      id: Date.now().toString(),
+      role: 'user',
+      content: action.replace(/_/g, ' '),
+      timestamp: new Date(),
     }
+    setMessages(prev => [...prev, userMessage])
+    setIsLoading(true)
 
-    // Chemical/release questions
-    if (lowerQuery.includes('chemical') || lowerQuery.includes('release')) {
-      if (lowerQuery.includes('total') || lowerQuery.includes('how much')) {
-        const total = facilities.reduce((sum, f) => sum + (f.total_release_kg ?? 0), 0)
-        return `Total chemical releases tracked: ${total.toLocaleString()} kg\n\nThis includes all pathways: air, water, land, disposal, and recycling.`
-      }
-      if (lowerQuery.includes('most common') || lowerQuery.includes('top')) {
-        const chemMap: Record<string, number> = {}
-        facilities.forEach(f => {
-          f.chemicals?.forEach(c => {
-            chemMap[c.name] = (chemMap[c.name] ?? 0) + c.amount_kg
-          })
-        })
-        const top = Object.entries(chemMap).sort((a, b) => b[1] - a[1]).slice(0, 5)
-        return `Top 5 chemicals by release:\n${top.map(([name, amt]) => `• ${name}: ${amt.toLocaleString()} kg`).join('\n')}`
-      }
-    }
-
-    // Anomaly questions
-    if (lowerQuery.includes('anomal')) {
-      const anomalies = facilities.filter(f => f.anomaly)
-      return `Found ${anomalies.length} anomalous facilities:\n${anomalies.slice(0, 5).map(f => `• ${f.name}`).join('\n')}\n\nAnomalies indicate unusual behavior compared to similar industry peers.`
-    }
-
-    // Zone/area questions
-    if (lowerQuery.includes('zone') || lowerQuery.includes('selected')) {
-      if (selectedZone && selectedZone.length > 0) {
-        const total = selectedZone.reduce((sum, f) => sum + (f.total_release_kg ?? 0), 0)
-        const avgRisk = selectedZone.reduce((sum, f) => sum + (f.risk_score ?? 0), 0) / selectedZone.length
-        return `Selected zone summary:\n• Facilities: ${selectedZone.length}\n• Total release: ${total.toLocaleString()} kg\n• Avg risk score: ${avgRisk.toFixed(2)}`
-      }
-      return 'Click on a facility on the map to see zone details.'
-    }
-
-    // Industry questions
-    if (lowerQuery.includes('industry') || lowerQuery.includes('sector')) {
-      const industries: Record<string, number> = {}
-      facilities.forEach(f => {
-        industries[f.industry ?? 'Unknown'] = (industries[f.industry ?? 'Unknown'] ?? 0) + 1
-      })
-      const top = Object.entries(industries).sort((a, b) => b[1] - a[1]).slice(0, 5)
-      return `Top industries represented:\n${top.map(([ind, count]) => `• ${ind}: ${count} facilities`).join('\n')}`
-    }
-
-    // Scroll/visual questions
-    if (lowerQuery.includes('scroll') || lowerQuery.includes('plume')) {
-      return 'Scroll down to see the plume visualization intensity increase. The colored clouds expand based on chemical release volume, showing pollution accumulation over time. The intensity is color-coded by risk level.'
-    }
-
-    // Cluster/navigation
-    if (lowerQuery.includes('cluster') || lowerQuery.includes('zoom') || lowerQuery.includes('navigate')) {
-      return 'The map uses clustering:\n• Zoom out to see facility clusters with numbers\n• Click a cluster to zoom in automatically\n• Click individual facilities to see detailed information'
-    }
-
-    // Scenario questions
-    if (lowerQuery.includes('scenario') || lowerQuery.includes('what if')) {
-      return 'Use the scenario toggles (top-right) to explore:\n• Current: Actual reported data\n• What if removed?: Visualize impact of removing facilities\n• What if 2× emissions?: See doubled emissions scenario'
-    }
-
-    // Data source
-    if (lowerQuery.includes('data') || lowerQuery.includes('source') || lowerQuery.includes('where')) {
-      return 'Data comes from Toronto ChemTRAC (Chemical Tracking & Reporting):\nhttps://open.toronto.ca/dataset/chemical-tracking-chemtrac/\n\nThis tracks chemical releases by facilities to air, water, land, disposal, and recycling.'
-    }
-
-    // Help/guidance
-    if (lowerQuery.includes('help') || lowerQuery.includes('how to') || lowerQuery.includes('guide')) {
-      return 'Getting started:\n1. Explore the map and see facility clusters\n2. Zoom in to see individual facilities\n3. Click a facility to see detailed info & zone exposure\n4. Scroll to see plume intensity change\n5. Use scenarios to explore what-if cases\n\nAsk me about risk, chemicals, anomalies, or anything specific!'
-    }
-
-    // Fallback
-    return `I can help with questions about:\n• Risk scores & calculations\n• Chemical releases & top pollutants\n• Anomalous facilities\n• Industries & sectors\n• Map navigation & features\n• Data sources\n\nWhat would you like to know?`
+    setTimeout(() => {
+      const answer = generateAnswer(action)
+      setMessages(prev => [...prev, answer])
+      setIsLoading(false)
+    }, 500)
   }
 
-  const handleSend = async () => {
+  const generateAnswer = (query: string): Message => {
+    const lowerQuery = query.toLowerCase()
+    let content = ''
+    let buttons: { label: string; action: string }[] | undefined
+
+    // Button actions
+    if (lowerQuery === 'highest_risk') {
+      const sorted = [...facilities]
+        .filter(f => f.risk_score != null)
+        .sort((a, b) => (b.risk_score ?? 0) - (a.risk_score ?? 0))
+      const top5 = sorted.slice(0, 5)
+      
+      content = `**Top 5 Highest Risk Facilities:**\n\n${top5.map((f, i) => 
+        `${i + 1}. **${f.name}**\n   Risk: ${f.risk_score?.toFixed(1)}/100${f.anomaly ? ' ⚠️ ANOMALY' : ''}\n   ${f.total_release_kg?.toLocaleString()} kg/year`
+      ).join('\n\n')}\n\nWastewater plants dominate due to heavy metal releases (mercury, lead, cadmium).`
+      
+      buttons = [
+        { label: '💧 Why Wastewater Plants?', action: 'wastewater' },
+        { label: '📍 Proximity Impact', action: 'proximity' },
+        { label: '🔙 Main Menu', action: 'menu' },
+      ]
+    }
+    
+    else if (lowerQuery === 'anomalies') {
+      const anomalies = facilities.filter(f => f.anomaly)
+      const highConfidence = facilities.filter(f => (f as any).anomaly_confidence > 75)
+      
+      content = `**Anomaly Detection System:**\n\n` +
+        `Found ${anomalies.length} anomalous facilities using ensemble ML:\n\n` +
+        `**4-Method Voting System:**\n` +
+        `1. Isolation Forest - global outliers\n` +
+        `2. Industry Analysis - peer comparison\n` +
+        `3. Extreme Risk - 95th percentile\n` +
+        `4. Carcinogen+Proximity - toxic combos\n\n` +
+        `Anomaly declared if 2+ methods agree.\n\n` +
+        `${highConfidence.length} facilities have >75% confidence scores.`
+      
+      buttons = [
+        { label: '🎯 View Anomalies', action: 'list_anomalies' },
+        { label: '🔬 ML Details', action: 'ml_details' },
+        { label: '🔙 Main Menu', action: 'menu' },
+      ]
+    }
+    
+    else if (lowerQuery === 'chemicals') {
+      content = `**Most Toxic Chemicals (Score/100):**\n\n` +
+        `🥇 Mercury (100) - Extreme neurotoxin\n` +
+        `🥈 Lead (95) - Children's brain damage\n` +
+        `🥉 Formaldehyde (92) - Carcinogen\n` +
+        `⚠️ Chromium VI (90) - "Erin Brockovich chemical"\n` +
+        `⚠️ Benzene (88) - Causes leukemia\n` +
+        `⚠️ Cadmium (87) - Kidney/lung damage\n\n` +
+        `Scores based on EPA IRIS & IARC classifications.`
+      
+      buttons = [
+        { label: '💀 Heavy Metals', action: 'heavy_metals' },
+        { label: '☁️ VOCs & NOx', action: 'vocs' },
+        { label: '🔙 Main Menu', action: 'menu' },
+      ]
+    }
+    
+    else if (lowerQuery === 'risk_calc') {
+      content = `**Risk Score Calculation:**\n\n` +
+        `**40%** - Chemical Toxicity Weight\n` +
+        `Each chemical scored 0-100. Mercury=100, VOCs=58.\n\n` +
+        `**25%** - Release Volume\n` +
+        `Total kg released (log-scaled, industry-normalized).\n\n` +
+        `**20%** - Maximum Single Toxin\n` +
+        `Even small amounts of extreme toxins matter.\n\n` +
+        `**15%** - Heavy Metals\n` +
+        `Mercury, lead, cadmium tracked separately.\n\n` +
+        `**Multipliers:**\n` +
+        `• Proximity: 1.0-2.0x for schools/hospitals nearby\n` +
+        `• Carcinogens: +15% if 2+ present`
+      
+      buttons = [
+        { label: '📍 Proximity Explained', action: 'proximity' },
+        { label: '📊 Compare Industries', action: 'industries' },
+        { label: '🔙 Main Menu', action: 'menu' },
+      ]
+    }
+    
+    else if (lowerQuery === 'wastewater') {
+      content = `**Why Wastewater Plants Rank Highest:**\n\n` +
+        `Toronto's 3 treatment plants process city sewage but release:\n\n` +
+        `• **Mercury** - 11 kg/year from amalgam fillings\n` +
+        `• **Lead** - 527 kg/year from old pipes\n` +
+        `• **Cadmium** - 422 kg/year from industrial runoff\n` +
+        `• **PAHs** - 118 kg/year carcinogens\n\n` +
+        `Heavy metals bioaccumulate in Lake Ontario food chain. Risk scores: 97-100/100.`
+      
+      buttons = [
+        { label: '🐟 Food Chain Impact', action: 'bioaccumulation' },
+        { label: '🔙 Main Menu', action: 'menu' },
+      ]
+    }
+    
+    else if (lowerQuery === 'proximity') {
+      content = `**Proximity Risk Multiplier:**\n\n` +
+        `Location matters. Same emissions near a school = higher risk than in industrial zone.\n\n` +
+        `**Distance Decay:**\n` +
+        `• <1km from hospital/school: 1.5-2.0x\n` +
+        `• 1-5km: 1.2-1.5x\n` +
+        `• >5km: 1.0x baseline\n\n` +
+        `**Sensitive Locations:**\n` +
+        `SickKids, Toronto General, U of T, York U, high-density residential.\n\n` +
+        `Example: U of T steam plant gets 1.57x multiplier for downtown core location.`
+      
+      buttons = [
+        { label: '🎓 U of T Case Study', action: 'uoft' },
+        { label: '🔙 Main Menu', action: 'menu' },
+      ]
+    }
+    
+    else if (lowerQuery === 'list_anomalies') {
+      const anomalies = facilities.filter(f => f.anomaly).slice(0, 8)
+      content = `**Anomalous Facilities:**\n\n${anomalies.map((f, i) => 
+        `${i + 1}. ${f.name}\n   Risk: ${f.risk_score?.toFixed(1)} | ${f.industry}`
+      ).join('\n\n')}\n\nAnomalies indicate unusual emissions vs industry peers.`
+      
+      buttons = [{ label: '🔙 Main Menu', action: 'menu' }]
+    }
+    
+    else if (lowerQuery === 'heavy_metals') {
+      const heavyMetal = facilities.filter(f => 
+        f.chemicals?.some(c => 
+          ['mercury', 'lead', 'cadmium', 'chromium', 'arsenic'].some(m => 
+            c.name.toLowerCase().includes(m)
+          )
+        )
+      )
+      content = `**Heavy Metal Emitters:**\n\n` +
+        `Found ${heavyMetal.length} facilities releasing heavy metals.\n\n` +
+        `**Why They're Dangerous:**\n` +
+        `• Bioaccumulate in body/environment\n` +
+        `• Persist for decades in soil\n` +
+        `• No safe exposure level for lead/mercury\n` +
+        `• Target: nervous system, kidneys, development`
+      
+      buttons = [{ label: '🔙 Main Menu', action: 'menu' }]
+    }
+    
+    else if (lowerQuery === 'menu') {
+      content = 'What would you like to explore?'
+      buttons = [
+        { label: '🏆 Highest Risk Facilities', action: 'highest_risk' },
+        { label: '⚠️ Anomalies Explained', action: 'anomalies' },
+        { label: '🧪 Toxic Chemicals', action: 'chemicals' },
+        { label: '📊 How Risk is Calculated', action: 'risk_calc' },
+      ]
+    }
+    
+    else {
+      // Free-form question handling
+      if (lowerQuery.includes('total') || lowerQuery.includes('how much')) {
+        const total = facilities.reduce((sum, f) => sum + (f.total_release_kg ?? 0), 0)
+        content = `**Total Tracked Emissions:** ${total.toLocaleString()} kg/year\n\nIncludes air, water, land, disposal, and recycling pathways.`
+      } else if (lowerQuery.includes('industry') || lowerQuery.includes('sector')) {
+        const industries: Record<string, number> = {}
+        facilities.forEach(f => {
+          industries[f.industry ?? 'Unknown'] = (industries[f.industry ?? 'Unknown'] ?? 0) + 1
+        })
+        const top = Object.entries(industries).sort((a, b) => b[1] - a[1]).slice(0, 5)
+        content = `**Top Industries:**\n\n${top.map(([ind, count]) => `• ${ind}: ${count} facilities`).join('\n')}`
+      } else {
+        content = 'I can help with:\n• Risk scores & calculations\n• Chemical toxicity\n• Anomaly detection\n• Specific facilities\n\nWhat interests you?'
+      }
+      
+      buttons = [{ label: '🔙 Main Menu', action: 'menu' }]
+    }
+
+    return {
+      id: (Date.now() + 1).toString(),
+      role: 'assistant',
+      content,
+      timestamp: new Date(),
+      buttons,
+    }
+  }
+
+  const handleSend = () => {
     if (!input.trim()) return
 
     const userMessage: Message = {
@@ -142,16 +255,9 @@ export default function Assistant({ facilities, selectedZone }: AssistantProps) 
     setInput('')
     setIsLoading(true)
 
-    // Simulate API call delay
     setTimeout(() => {
       const answer = generateAnswer(input)
-      const assistantMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        role: 'assistant',
-        content: answer,
-        timestamp: new Date(),
-      }
-      setMessages(prev => [...prev, assistantMessage])
+      setMessages(prev => [...prev, answer])
       setIsLoading(false)
     }, 500)
   }
@@ -163,7 +269,7 @@ export default function Assistant({ facilities, selectedZone }: AssistantProps) 
         onClick={() => setIsOpen(!isOpen)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        aria-label="Open assistant"
+        aria-label="Ask questions"
       >
         <span className="assistant-icon">💬</span>
       </motion.button>
@@ -178,22 +284,32 @@ export default function Assistant({ facilities, selectedZone }: AssistantProps) 
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
           >
             <div className="assistant-header">
-              <h3>ChemCity Guide</h3>
-              <button
-                className="assistant-close"
-                onClick={() => setIsOpen(false)}
-                aria-label="Close"
-              >
-                ×
-              </button>
+              <h3>💬 Ask Me Anything</h3>
+              <button className="assistant-close" onClick={() => setIsOpen(false)}>×</button>
             </div>
 
             <div className="assistant-messages">
               {messages.map((msg) => (
                 <div key={msg.id} className={`message message-${msg.role}`}>
                   <div className="message-bubble">
-                    {msg.content}
+                    {msg.content.split('\n').map((line, i) => (
+                      <div key={i}>{line.startsWith('**') && line.endsWith('**') ? 
+                        <strong>{line.slice(2, -2)}</strong> : line}</div>
+                    ))}
                   </div>
+                  {msg.buttons && (
+                    <div className="message-buttons">
+                      {msg.buttons.map((btn, i) => (
+                        <button
+                          key={i}
+                          className="message-button"
+                          onClick={() => handleButtonClick(btn.action)}
+                        >
+                          {btn.label}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
               {isLoading && (
@@ -212,19 +328,16 @@ export default function Assistant({ facilities, selectedZone }: AssistantProps) 
               <input
                 type="text"
                 className="assistant-input"
-                placeholder="Ask me anything..."
+                placeholder="Ask about risk, chemicals, facilities..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                onKeyPress={(e) => {
-                  if (e.key === 'Enter') handleSend()
-                }}
+                onKeyPress={(e) => e.key === 'Enter' && handleSend()}
                 disabled={isLoading}
               />
               <button
                 className="assistant-send"
                 onClick={handleSend}
                 disabled={isLoading || !input.trim()}
-                aria-label="Send"
               >
                 →
               </button>

@@ -475,3 +475,19 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  /* Ensure the main container doesn't cut off the popup */
+  .main {
+    overflow: visible !important;
+  }
+
+  /* If Cumulative Exposure is blocking, we dim it when popup is active */
+  .app:has(#custom-facility-popup) .stories-container,
+  .app:has(#custom-facility-popup) .footer {
+    opacity: 0.3;
+    pointer-events: none;
+    filter: blur(2px);
+    transition: opacity 0.3s ease;
+  }
+}

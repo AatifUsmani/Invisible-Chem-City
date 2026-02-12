@@ -1,10 +1,8 @@
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState} from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
-import type { Facility, Scenario } from './types'
+import type { Facility } from './types'
 import MapView from './MapView.tsx'
 import ZonePanel from './ZonePanel.tsx'
-import Tooltip from './Tooltip.tsx'
-import ScenarioToggles from './ScenarioToggles.tsx'
 import Legend from './Legend.tsx'
 import Assistant from './assistant/Assistant.tsx'
 import './App.css'
@@ -143,10 +141,7 @@ const STORIES: Story[] = [
 
 function App() {
   const [facilities, setFacilities] = useState<Facility[]>([])
-  const [scenario, setScenario] = useState<Scenario>('normal')
-  const [hoverFacility, setHoverFacility] = useState<Facility | null>(null)
   const [selectedZone, setSelectedZone] = useState<Facility[] | null>(null)
-  const [searchTerm, setSearchTerm] = useState<string>('')
   const [focusedId, setFocusedId] = useState<string | null>(null)
   const [expandedStory, setExpandedStory] = useState<string | null>(null)
 
@@ -178,26 +173,6 @@ function App() {
       })
   }, [])
 
-  const getVisibleFacilities = useCallback(() => {
-    if (scenario === 'removed') return []
-    const transformed = facilities.map((f) => ({
-      ...f,
-      risk_score: scenario === 'doubled' ? Math.min(100, (f.risk_score ?? 0) * 1.5) : (f.risk_score ?? 0),
-      total_release_kg: scenario === 'doubled' ? (f.total_release_kg ?? 0) * 2 : (f.total_release_kg ?? 0),
-    }))
-
-    const term = searchTerm.trim().toLowerCase()
-    if (!term) return transformed
-
-    return transformed.filter((f) => {
-      const name = String((f as any).name || '').toLowerCase()
-      const industry = String((f as any).industry || '').toLowerCase()
-      const chems = (f as any).chemicals ? (f as any).chemicals.map((c: any) => String(c.name || '').toLowerCase()).join(' ') : ''
-      return name.includes(term) || industry.includes(term) || chems.includes(term)
-    })
-  }, [facilities, scenario])
-
-  const visibleFacilities = getVisibleFacilities()
 
   const handleStoryClick = (storyId: string, facilityId: string) => {
     if (expandedStory === storyId) {
@@ -334,64 +309,6 @@ function App() {
           )}
         </AnimatePresence>
 
-        {/* Map search box */}
-<div className="map-search-container">
-  <input
-    aria-label="Search location"
-    className="map-search-box"
-    placeholder="Find my risk: enter address or postal code..."
-    value={searchTerm}
-    onChange={(e) => { 
-      setSearchTerm(e.target.value)
-      setFocusedId(null)
-    }}
-    onKeyDown={async (e) => {
-      if (e.key === 'Enter' && searchTerm.trim()) {
-        // Try geocoding the address first
-        try {
-          const response = await fetch(
-            `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(searchTerm)}.json?` +
-            `proximity=-79.38,43.65&` + // Toronto center
-            `bbox=-79.639219,43.403221,-79.115952,43.855457&` + // Toronto bounds
-            `access_token=${import.meta.env.VITE_MAPBOX_TOKEN}`
-          )
-          const data = await response.json()
-          
-          if (data.features && data.features.length > 0) {
-            const [lon, lat] = data.features[0].center
-            
-            // Find nearest facility to this location
-            const nearest = visibleFacilities.reduce((closest, f) => {
-              const dist = Math.sqrt(
-                Math.pow(f.latitude - lat, 2) + 
-                Math.pow(f.longitude - lon, 2)
-              )
-              return dist < closest.dist ? { facility: f, dist } : closest
-            }, { facility: null as any, dist: Infinity })
-            
-            if (nearest.facility) {
-              setFocusedId(String(nearest.facility.id))
-              const mapEl = document.getElementById('map')
-              if (mapEl) {
-                mapEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
-              }
-            }
-          }
-        } catch (err) {
-          // Fallback: search facilities by name/chemical
-          if (visibleFacilities && visibleFacilities.length > 0) {
-            setFocusedId(String(visibleFacilities[0].id))
-            const mapEl = document.getElementById('map')
-            if (mapEl) {
-              mapEl.scrollIntoView({ behavior: 'smooth', block: 'center' })
-            }
-          }
-        }
-      }
-    }}
-  />
-</div>
-
         <motion.div className="cta-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
           <a href="#map" className="cta">Explore the Map</a>
         </motion.div>
@@ -408,7 +325,7 @@ function App() {
             </div>
           )}
           <MapView
-            facilities={visibleFacilities}
+            facilities={facilities}
             scrollIntensity={scrollIntensity}
             onZoneSelect={setSelectedZone}
             onMapReady={() => {}}
@@ -416,19 +333,6 @@ function App() {
             onFocusComplete={() => setFocusedId(null)}
           />
         </div>
-
-        <motion.div
-          className="overlay-panel scenario-panel"
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <ScenarioToggles scenario={scenario} onChange={setScenario} />
-        </motion.div>
-
-        {hoverFacility && (
-          <Tooltip facility={hoverFacility} scenario={scenario} onClose={() => setHoverFacility(null)} />
-        )}
 
         {selectedZone && selectedZone.length > 0 && (
           <ZonePanel facilities={selectedZone} onClose={() => setSelectedZone(null)} />
