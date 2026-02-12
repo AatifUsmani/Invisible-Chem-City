@@ -1,7 +1,7 @@
 .legend {
   position: absolute;
-  bottom: 50px; /* Moved down significantly so it doesn't block stories */
-  left: 20px;
+  bottom: 1px; /* Moved down significantly so it doesn't block stories */
+  left: 1px;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -14,6 +14,9 @@
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   max-height: 60vh; /* Reduced so it doesn't take up too much space */
   overflow-y: auto;
+  transform: scale(0.85); /* Scales the whole thing to 85% size */
+  transform-origin: bottom left; /* Keeps it pinned to the corner while shrinking */
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .legend-header {
@@ -150,11 +153,9 @@
 
 @media (max-width: 768px) {
   .legend {
-    /* Move it further into the corner */
     bottom: 20px !important; 
     left: 10px !important;
     
-    /* Shrink the overall size */
     max-width: 180px; 
     max-height: 35vh;
     background: rgba(0, 0, 0, 0.9); /* More opaque to stay readable when small */
@@ -195,8 +196,6 @@
     height: 10px;
   }
 
-  /* AUTO-HIDE legend when the facility popup is open */
-  /* This prevents the 'blocking' entirely */
   .map-view:has(#custom-facility-popup) .legend {
     opacity: 0;
     pointer-events: none;
