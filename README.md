@@ -15,7 +15,7 @@ Instead of treating all chemicals equally, each release is multiplied by a **Tox
 - **Moderate Weight (50-70):** Respiratory and systemic toxins (e.g., Nitrogen Oxides, Ammonia).
 
 ### 2. Multi-Pathway Modeling
-We apply **Exposure Pathway Multipliers** to account for how chemicals interact with the environment:
+Applied **Exposure Pathway Multipliers** to account for how chemicals interact with the environment:
 - **Air (1.0x):** Highest risk due to direct inhalation in urban areas.
 - **Water (0.95x):** High risk for bioaccumulation and groundwater contamination.
 - **Land/Disposal (0.3x - 0.7x):** Lower immediate risk but long-term persistence.
@@ -27,7 +27,7 @@ The score is dynamically boosted (up to 40%) based on the facility's proximity t
 - **High-Density Residential:** (e.g., Downtown Core).
 
 ### 4. Machine Learning Anomaly Detection
-We use an **Ensemble Isolation Forest** model to detect "Abnormal Actors." The ML pipeline flags facilities that:
+ **Ensemble Isolation Forest** model to detect "Abnormal Actors." The ML pipeline flags facilities that:
 - Release significantly higher toxicity-weighted loads than their industry peers (NAICS normalization).
 - Exhibit "Dangerous Combinations" (e.g., high carcinogen count + high proximity risk).
 
