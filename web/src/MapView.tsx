@@ -46,6 +46,8 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
     score: number,
     nearbyCount: number
   } | null>(null)
+  const [suggestions, setSuggestions] = useState<Array<{ place_name: string, center: [number, number] }>>([])
+  const [showSuggestions, setShowSuggestions] = useState(false)
 
   // Generate initials from facility name
   function getInitials(name: string): string {
@@ -75,6 +77,37 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
       },
     })),
   }), [facilities])
+
+  // --- AUTOCOMPLETE FETCH ---
+  const fetchSuggestions = async (query: string) => {
+    setSearchQuery(query)
+    if (query.length < 3) { setSuggestions([]); setShowSuggestions(false); return; }
+    try {
+      const res = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(query)}.json?proximity=-79.38,43.65&autocomplete=true&limit=5&access_token=${mapboxgl.accessToken}`)
+      const data = await res.json()
+      setSuggestions(data.features || [])
+      setShowSuggestions(true)
+    } catch { setSuggestions([]) }
+  }
+
+  // --- SUGGESTION SELECT ---
+  const handleSuggestionSelect = (suggestion: { place_name: string, center: [number, number] }) => {
+    setSearchQuery(suggestion.place_name)
+    setSuggestions([])
+    setShowSuggestions(false)
+    if (!mapRef.current) return
+    const [lon, lat] = suggestion.center
+    const radiusKm = 3
+    const nearby = facilities.map(f => ({ ...f, dist: haversineDistance(lat, lon, f.latitude, f.longitude) })).filter(f => f.dist <= radiusKm)
+    if (nearby.length > 0) {
+      const weightedSum = nearby.reduce((acc, f) => acc + (f.risk_score ?? 0) * (1 - f.dist/radiusKm), 0)
+      const weightTotal = nearby.reduce((acc, f) => acc + (1 - f.dist/radiusKm), 0)
+      setCommunityRisk({ address: suggestion.place_name, score: weightedSum / weightTotal, nearbyCount: nearby.length })
+    } else {
+      setCommunityRisk({ address: suggestion.place_name, score: 0, nearbyCount: 0 })
+    }
+    mapRef.current.flyTo({ center: [lon, lat], zoom: 14, pitch: 45 })
+  }
 
   // --- SEARCH HANDLER ---
   const handleFindMyRisk = async () => {
@@ -109,6 +142,8 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
   const handleReset = () => {
     setSearchQuery('');
     setCommunityRisk(null);
+    setSuggestions([]);
+    setShowSuggestions(false);
     if (mapRef.current) {
       mapRef.current.flyTo({ center: TORONTO_CENTER, zoom: 10.2, pitch: 0, bearing: 0 });
     }
@@ -310,20 +345,38 @@ export default function MapView({ facilities, scrollIntensity, onZoneSelect, onM
       
       {/* SEARCH BAR with RESET */}
       <div className="find-my-risk-container">
-        <div className="search-bar-glass">
+        <div className="search-bar-glass" style={{ position: 'relative' }}>
           <input 
             type="text" 
             placeholder="Find my community risk..." 
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && handleFindMyRisk()}
+            onChange={(e) => fetchSuggestions(e.target.value)}
+            onKeyDown={(e) => { if (e.key === 'Enter') { setShowSuggestions(false); handleFindMyRisk(); } if (e.key === 'Escape') setShowSuggestions(false); }}
+            onBlur={() => setTimeout(() => setShowSuggestions(false), 150)}
+            onFocus={() => suggestions.length > 0 && setShowSuggestions(true)}
+            autoComplete="off"
           />
           {(searchQuery || communityRisk) && (
             <button className="reset-btn" onClick={handleReset}>✕</button>
           )}
-          <button onClick={handleFindMyRisk} disabled={isSearching}>
+          <button onClick={() => { setShowSuggestions(false); handleFindMyRisk(); }} disabled={isSearching}>
             {isSearching ? '...' : '→'}
           </button>
+
+          {/* AUTOCOMPLETE DROPDOWN */}
+          {showSuggestions && suggestions.length > 0 && (
+            <ul style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: 'rgba(20, 20, 30, 0.95)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.12)', borderTop: 'none', borderRadius: '0 0 12px 12px', listStyle: 'none', margin: 0, padding: '4px 0', zIndex: 9999, boxShadow: '0 8px 32px rgba(0,0,0,0.4)', maxHeight: '240px', overflowY: 'auto' }}>
+              {suggestions.map((s, i) => (
+                <li key={i} onMouseDown={() => handleSuggestionSelect(s)}
+                  style={{ padding: '10px 16px', cursor: 'pointer', fontSize: '13px', color: 'rgba(255,255,255,0.85)', borderBottom: i < suggestions.length - 1 ? '1px solid rgba(255,255,255,0.06)' : 'none', transition: 'background 0.15s' }}
+                  onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.08)')}
+                  onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                >
+                  📍 {s.place_name}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
 

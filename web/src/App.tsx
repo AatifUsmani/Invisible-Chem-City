@@ -4,7 +4,6 @@ import type { Facility } from './types'
 import MapView from './MapView.tsx'
 import ZonePanel from './ZonePanel.tsx'
 import Legend from './Legend.tsx'
-import Assistant from './assistant/Assistant.tsx'
 import './App.css'
 import ThreeBackground from './ThreeBackground.tsx'
 
@@ -345,8 +344,6 @@ function App() {
         <p>Data: facility-level risk scores and chemical releases. Anomalies = facilities that behave unusually vs peers.</p>
         <p><a href="https://open.toronto.ca/dataset/chemical-tracking-chemtrac/" target="_blank" rel="noopener noreferrer">Toronto Chemtrac / Open Data</a></p>
       </footer>
-
-      <Assistant facilities={facilities} selectedZone={selectedZone} />
     </div>
   )
 }
